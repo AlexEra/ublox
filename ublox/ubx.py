@@ -233,7 +233,8 @@ class UbxMessage(object):
                            '04': lambda: self.__ubx_NAV_DOP(kwargs["dev"]),
                            '06': lambda: self.__ubx_NAV_SOL(kwargs["dev"]),
                            '07': lambda: self.__ubx_NAV_PVT(kwargs["dev"])}
-                message[ubx_id]()
+                if ubx_id in message.keys():
+                    message[ubx_id]()
 
             #RXM
             elif(ubx_class == '02'):
