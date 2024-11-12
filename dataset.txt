@@ -1,0 +1,8986 @@
+IR: [189, 140, 12, 183, 167]
+IR: [189, 166, 11, 187, 172]
+IR: [189, 169, 11, 187, 173]
+IR: [188, 168, 12, 187, 174]
+IR: [189, 169, 11, 187, 173]
+IR: [189, 169, 11, 187, 173]
+IR: [187, 170, 12, 187, 173]
+IR: [182, 153, 144, 13, 196]
+IR: [182, 151, 170, 12, 195]
+IR: [183, 151, 170, 11, 195]
+IR: [183, 152, 170, 11, 195]
+IR: [183, 152, 171, 11, 194]
+IR: [182, 151, 175, 11, 194]
+IR: [181, 146, 159, 104, 181]
+IR: [181, 147, 162, 164, 14]
+IR: [181, 145, 161, 165, 14]
+IR: [181, 146, 162, 163, 13]
+IR: [181, 146, 161, 161, 12]
+IR: [181, 146, 160, 153, 13]
+IR: [181, 147, 161, 138, 12]
+IR: [180, 145, 159, 156, 161]
+IR: [182, 146, 160, 160, 162]
+IR: [181, 146, 160, 161, 163]
+IR: [182, 146, 161, 160, 162]
+IR: [182, 146, 159, 161, 163]
+IR: [182, 147, 160, 161, 163]
+Traceback (most recent call last):
+  File "C:\Users\admin\Desktop\test.py", line 88, in <module>
+    res = ww.catch_input_data()
+  File "C:\Users\admin\Desktop\pywake.py", line 40, in catch_input_data
+    byte = int.from_bytes(self.serial_conn.read(), byteorder='big')
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 288, in read
+    result_ok = win32.GetOverlappedResult(
+KeyboardInterrupt
+^C
+C:\Users\admin\Desktop>python test.py
+RFID: [181, 254, 26]
+RFID: [186, 41, 7]
+Traceback (most recent call last):
+  File "C:\Users\admin\Desktop\test.py", line 88, in <module>
+    res = ww.catch_input_data()
+  File "C:\Users\admin\Desktop\pywake.py", line 40, in catch_input_data
+    byte = int.from_bytes(self.serial_conn.read(), byteorder='big')
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 288, in read
+    result_ok = win32.GetOverlappedResult(
+KeyboardInterrupt
+^C
+C:\Users\admin\Desktop>python test.py
+BAT:    0
+BAT:    0
+Traceback (most recent call last):
+  File "C:\Users\admin\Desktop\test.py", line 88, in <module>
+    res = ww.catch_input_data()
+  File "C:\Users\admin\Desktop\pywake.py", line 40, in catch_input_data
+    byte = int.from_bytes(self.serial_conn.read(), byteorder='big')
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 288, in read
+    result_ok = win32.GetOverlappedResult(
+KeyboardInterrupt
+^C
+C:\Users\admin\Desktop>python test.py
+  File "C:\Users\admin\Desktop\test.py", line 108
+    #         print(e)
+IndentationError: expected an indented block after 'if' statement on line 89
+
+C:\Users\admin\Desktop>python test.py
+
+C:\Users\admin\Desktop>python test.py
+
+C:\Users\admin\Desktop>python test.py
+
+C:\Users\admin\Desktop>python test.py
+
+C:\Users\admin\Desktop>python test.py
+
+C:\Users\admin\Desktop>python test.py
+
+C:\Users\admin\Desktop>python test.py
+
+C:\Users\admin\Desktop>python test.py
+
+C:\Users\admin\Desktop>python E:\git_folder\ublox\test.py
+Traceback (most recent call last):
+  File "E:\git_folder\ublox\test.py", line 6, in <module>
+    x = ubx.UbsStream(serial.Serial(port='COM29', baudrate=115200, timeout=1))
+NameError: name 'ubx' is not defined
+
+C:\Users\admin\Desktop>python E:\git_folder\ublox\test.py
+Traceback (most recent call last):
+  File "E:\git_folder\ublox\test.py", line 6, in <module>
+    x = ublox.UbsStream(serial.Serial(port='COM29', baudrate=115200, timeout=1))
+AttributeError: module 'ublox' has no attribute 'UbsStream'
+
+C:\Users\admin\Desktop>python E:\git_folder\ublox\test.py
+Traceback (most recent call last):
+  File "E:\git_folder\ublox\test.py", line 6, in <module>
+    x = ubx.UbsStream(serial.Serial(port='COM29', baudrate=115200, timeout=1))
+NameError: name 'ubx' is not defined
+
+C:\Users\admin\Desktop>python E:\git_folder\ublox\test.py
+  File "E:\git_folder\ublox\test.py", line 9
+    #     print(x.read())
+IndentationError: expected an indented block after 'if' statement on line 5
+
+C:\Users\admin\Desktop>python E:\git_folder\ublox\test.py
+
+C:\Users\admin\Desktop>python E:\git_folder\ublox\test.py
+Traceback (most recent call last):
+  File "E:\git_folder\ublox\test.py", line 6, in <module>
+    x = ubx.UbxStream(serial.Serial(port='COM29', baudrate=115200, timeout=1))
+NameError: name 'ubx' is not defined
+
+C:\Users\admin\Desktop>python E:\git_folder\ublox\test.py
+Transmitting
+06 00
+Receiving
+01 35
+Traceback (most recent call last):
+  File "E:\git_folder\ublox\test.py", line 9, in <module>
+    print(x.read())
+  File "E:\git_folder\ublox\ublox\ubx.py", line 114, in read
+    return UbxMessage(ubx_class, ubx_id, dev=self.dev, version=self._version)
+  File "E:\git_folder\ublox\ublox\ubx.py", line 236, in __init__
+    message[ubx_id]()
+KeyError: '35'
+
+C:\Users\admin\Desktop>python E:\git_folder\ublox\test.py
+Transmitting
+06 00
+Receiving
+01 35
+Traceback (most recent call last):
+  File "E:\git_folder\ublox\test.py", line 9, in <module>
+    x.read()
+  File "E:\git_folder\ublox\ublox\ubx.py", line 114, in read
+    return UbxMessage(ubx_class, ubx_id, dev=self.dev, version=self._version)
+  File "E:\git_folder\ublox\ublox\ubx.py", line 236, in __init__
+    message[ubx_id]()
+KeyError: '35'
+
+C:\Users\admin\Desktop>python E:\git_folder\ublox\test.py
+Transmitting
+06 00
+Receiving
+01 35
+Traceback (most recent call last):
+  File "E:\git_folder\ublox\test.py", line 9, in <module>
+    print(x.read())
+  File "E:\git_folder\ublox\ublox\ubx.py", line 114, in read
+    return UbxMessage(ubx_class, ubx_id, dev=self.dev, version=self._version)
+  File "E:\git_folder\ublox\ublox\ubx.py", line 236, in __init__
+    if usb_id in message.keys():
+NameError: name 'usb_id' is not defined. Did you mean: 'ubx_id'?
+
+C:\Users\admin\Desktop>python E:\git_folder\ublox\test.py
+Transmitting
+06 00
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x0000019560413040>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x00000195604131F0>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x0000019560413220>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x00000195604132B0>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x0000019560413250>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x0000019560413250>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x0000019560413250>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x00000195604133A0>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x00000195604133A0>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x00000195604134C0>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x00000195604134F0>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x00000195604134F0>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x00000195604135E0>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x0000019560413520>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x0000019560413520>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x0000019560413520>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x0000019560413700>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x0000019560413700>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x0000019560413700>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x0000019560413610>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x0000019560413610>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x0000019560413610>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x00000195604137C0>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x00000195604137C0>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x00000195604137C0>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x0000019560413850>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x0000019560413850>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x0000019560413850>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x0000019560413E80>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x0000019560413E80>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x0000019560413790>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x0000019560413790>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x0000019560413790>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x0000019560413E20>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x0000019560413E20>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x0000019560413E20>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x0000019560413CD0>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x0000019560413CD0>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x0000019560413CD0>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x0000019560413C10>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x0000019560413C10>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x0000019560413C10>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x0000019560413C10>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x0000019560413C10>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x0000019560413BB0>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x0000019560413BB0>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x0000019560413BB0>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x0000019560413BB0>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x0000019560413BB0>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x0000019560413BB0>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x0000019560413AC0>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x0000019560413AC0>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x0000019560413AC0>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x0000019560413A60>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x0000019560413A60>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x0000019560413A60>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x0000019560413910>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x0000019560413910>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x0000019560413910>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x00000195604138E0>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x00000195604138E0>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x00000195604138E0>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x00000195603FCFD0>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x00000195603FCFD0>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x00000195603FCFD0>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x00000195603FD060>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x00000195603FD060>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x00000195603FD060>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x00000195603FD0C0>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x00000195603FD0C0>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x00000195603FD0C0>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x00000195603FD120>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x00000195603FD120>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x00000195603FD120>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x00000195603FD180>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x00000195603FD180>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x00000195603FD180>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x00000195603FD180>
+Receiving
+01 07
+<ublox.ubx.UbxMessage object at 0x00000195603FD180>
+Receiving
+01 35
+<ublox.ubx.UbxMessage object at 0x00000195603FD180>
+Receiving
+01 04
+<ublox.ubx.UbxMessage object at 0x00000195603FD1E0>
+Traceback (most recent call last):
+  File "E:\git_folder\ublox\test.py", line 9, in <module>
+    print(x.read())
+  File "E:\git_folder\ublox\ublox\ubx.py", line 90, in read
+    if self._dev.in_waiting > 0:
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 258, in in_waiting
+    if not win32.ClearCommError(self._port_handle, ctypes.byref(flags), ctypes.byref(comstat)):
+KeyboardInterrupt
+^C
+C:\Users\admin\Desktop>python E:\git_folder\ublox\test.py
+Transmitting
+06 00
+Receiving
+01 35
+Traceback (most recent call last):
+  File "E:\git_folder\ublox\test.py", line 11, in <module>
+    print(msg.message)
+AttributeError: 'UbxMessage' object has no attribute 'message'
+
+C:\Users\admin\Desktop>python E:\git_folder\ublox\test.py
+Transmitting
+06 00
+Receiving
+01 04
+Receiving
+01 07
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+Receiving
+01 35
+Receiving
+01 07
+Receiving
+01 35
+Receiving
+01 07
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+Receiving
+01 35
+Receiving
+01 07
+Receiving
+01 07
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+Receiving
+01 35
+Receiving
+01 07
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+Receiving
+01 35
+Receiving
+01 07
+Receiving
+01 07
+Traceback (most recent call last):
+  File "E:\git_folder\ublox\test.py", line 12, in <module>
+    sleep(0.1)
+KeyboardInterrupt
+^C
+C:\Users\admin\Desktop>python E:\git_folder\ublox\test.py
+Transmitting
+06 00
+Receiving
+01 07
+599384808
+Receiving
+01 35
+Traceback (most recent call last):
+  File "E:\git_folder\ublox\test.py", line 11, in <module>
+    print(msg.lat)
+AttributeError: 'UbxMessage' object has no attribute 'lat'
+
+C:\Users\admin\Desktop>python E:\git_folder\ublox\test.py
+Transmitting
+06 00
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+599379761
+Receiving
+01 35
+Receiving
+01 07
+599379875
+Receiving
+01 35
+Receiving
+01 07
+599379911
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+599379839
+Receiving
+01 35
+Receiving
+01 07
+599379968
+Receiving
+01 07
+599379931
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+599379684
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+599379386
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+599379304
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+599379426
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+599379518
+Traceback (most recent call last):
+  File "E:\git_folder\ublox\test.py", line 10, in <module>
+    msg = x.read()
+  File "E:\git_folder\ublox\ublox\ubx.py", line 90, in read
+    if self._dev.in_waiting > 0:
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 258, in in_waiting
+    if not win32.ClearCommError(self._port_handle, ctypes.byref(flags), ctypes.byref(comstat)):
+KeyboardInterrupt
+^C
+C:\Users\admin\Desktop>python E:\git_folder\ublox\test.py
+Transmitting
+06 00
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217846000, lon: 302040989, lat: 599951822, height: 382841, hMSL: 366938, hAcc: 2310794, vAcc: 351097
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217846500, lon: 302040989, lat: 599951822, height: 382841, hMSL: 366938, hAcc: 2327206, vAcc: 352954
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217847000, lon: 302040989, lat: 599951822, height: 382841, hMSL: 366938, hAcc: 2343653, vAcc: 354818
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217847700, lon: 302040989, lat: 599951822, height: 382841, hMSL: 366938, hAcc: 2366736, vAcc: 357441
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217848400, lon: 302040989, lat: 599951822, height: 382841, hMSL: 366938, hAcc: 2389888, vAcc: 360078
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217849100, lon: 302040989, lat: 599951822, height: 382841, hMSL: 366938, hAcc: 2413106, vAcc: 362730
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217850000, lon: 302040989, lat: 599951822, height: 382841, hMSL: 366938, hAcc: 2443057, vAcc: 366161
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217850500, lon: 302040989, lat: 599951822, height: 382841, hMSL: 366938, hAcc: 2459745, vAcc: 368077
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217851000, lon: 302040989, lat: 599951822, height: 382841, hMSL: 366938, hAcc: 2476466, vAcc: 370000
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217851700, lon: 302040989, lat: 599951822, height: 382841, hMSL: 366938, hAcc: 2499932, vAcc: 372705
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217852400, lon: 302040989, lat: 599951822, height: 382841, hMSL: 366938, hAcc: 2523465, vAcc: 375424
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217853300, lon: 302709084, lat: 599392205, height: 207188, hMSL: 191258, hAcc: 360931, vAcc: 118527
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217854000, lon: 302708761, lat: 599393648, height: 205673, hMSL: 189744, hAcc: 157315, vAcc: 76213
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217854700, lon: 302708666, lat: 599394221, height: 206459, hMSL: 190530, hAcc: 115669, vAcc: 71990
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217855400, lon: 302708257, lat: 599395298, height: 205853, hMSL: 189924, hAcc: 96389, vAcc: 71238
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217856300, lon: 302708069, lat: 599396381, height: 204917, hMSL: 188988, hAcc: 81451, vAcc: 70724
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217857000, lon: 302707529, lat: 599397335, height: 204264, hMSL: 188335, hAcc: 73848, vAcc: 70885
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217857700, lon: 302707512, lat: 599397699, height: 203573, hMSL: 187644, hAcc: 68314, vAcc: 70908
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217858400, lon: 302707705, lat: 599397926, height: 203278, hMSL: 187349, hAcc: 64112, vAcc: 71494
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217859300, lon: 302708128, lat: 599398038, height: 204244, hMSL: 188315, hAcc: 60069, vAcc: 71577
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217860000, lon: 302708159, lat: 599398259, height: 205575, hMSL: 189646, hAcc: 57725, vAcc: 72002
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217860700, lon: 302708172, lat: 599398572, height: 205239, hMSL: 189310, hAcc: 55558, vAcc: 71568
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217861400, lon: 302707999, lat: 599399076, height: 204771, hMSL: 188842, hAcc: 53710, vAcc: 71668
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217862300, lon: 302708082, lat: 599399448, height: 205069, hMSL: 189140, hAcc: 51693, vAcc: 71660
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217863000, lon: 302708534, lat: 599399480, height: 205922, hMSL: 189993, hAcc: 50280, vAcc: 71527
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217863700, lon: 302708779, lat: 599399694, height: 205600, hMSL: 189671, hAcc: 49105, vAcc: 71568
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217864400, lon: 302708920, lat: 599399986, height: 206110, hMSL: 190182, hAcc: 48518, vAcc: 71588
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217865300, lon: 302709164, lat: 599399979, height: 205075, hMSL: 189146, hAcc: 48782, vAcc: 71982
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217866000, lon: 302709329, lat: 599399956, height: 204790, hMSL: 188861, hAcc: 48301, vAcc: 71975
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217866700, lon: 302709450, lat: 599399817, height: 204996, hMSL: 189068, hAcc: 47985, vAcc: 71726
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217867400, lon: 302726436, lat: 599394625, height: 101442, hMSL: 85513, hAcc: 410874, vAcc: 216018
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217868300, lon: 302749962, lat: 599380996, height: 205507, hMSL: 189579, hAcc: 128097, vAcc: 73748
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217869000, lon: 302749728, lat: 599380746, height: 206131, hMSL: 190202, hAcc: 103173, vAcc: 72962
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217869500, lon: 302749320, lat: 599380863, height: 206323, hMSL: 190394, hAcc: 92600, vAcc: 72684
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217870000, lon: 302748853, lat: 599381032, height: 206828, hMSL: 190899, hAcc: 84769, vAcc: 72514
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217870500, lon: 302748612, lat: 599381075, height: 206836, hMSL: 190907, hAcc: 78718, vAcc: 72392
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217871000, lon: 302748223, lat: 599381139, height: 207453, hMSL: 191525, hAcc: 73786, vAcc: 72312
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217871900, lon: 302747613, lat: 599381369, height: 206748, hMSL: 190819, hAcc: 66873, vAcc: 72206
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217872600, lon: 302747213, lat: 599381555, height: 206752, hMSL: 190823, hAcc: 62615, vAcc: 72000
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217873300, lon: 302746655, lat: 599381821, height: 207425, hMSL: 191496, hAcc: 59168, vAcc: 72098
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217874000, lon: 302746214, lat: 599381934, height: 207663, hMSL: 191734, hAcc: 56262, vAcc: 72068
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217874700, lon: 302745785, lat: 599382077, height: 207217, hMSL: 191289, hAcc: 53798, vAcc: 71896
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217875400, lon: 302745475, lat: 599382209, height: 206862, hMSL: 190933, hAcc: 51693, vAcc: 72019
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217876300, lon: 302745011, lat: 599382366, height: 206499, hMSL: 190570, hAcc: 49366, vAcc: 71840
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217877000, lon: 302744623, lat: 599382530, height: 206657, hMSL: 190728, hAcc: 47820, vAcc: 71978
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217877700, lon: 302744505, lat: 599382583, height: 206384, hMSL: 190456, hAcc: 46503, vAcc: 71972
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217878400, lon: 302744128, lat: 599382692, height: 206634, hMSL: 190705, hAcc: 45278, vAcc: 71964
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217879300, lon: 302743328, lat: 599383102, height: 207227, hMSL: 191298, hAcc: 43944, vAcc: 72171
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217880000, lon: 302743129, lat: 599383321, height: 206348, hMSL: 190419, hAcc: 43030, vAcc: 72167
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217880700, lon: 302742915, lat: 599383561, height: 206711, hMSL: 190782, hAcc: 42216, vAcc: 71989
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217881400, lon: 302743025, lat: 599383559, height: 206380, hMSL: 190452, hAcc: 41475, vAcc: 72151
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217883000, lon: 302742680, lat: 599383844, height: 205677, hMSL: 189749, hAcc: 40071, vAcc: 72144
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217883700, lon: 302742527, lat: 599383984, height: 205611, hMSL: 189682, hAcc: 39515, vAcc: 71961
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217884400, lon: 302742157, lat: 599384004, height: 205815, hMSL: 189886, hAcc: 38997, vAcc: 71949
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217885300, lon: 302741559, lat: 599384173, height: 205694, hMSL: 189766, hAcc: 38394, vAcc: 72122
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217886000, lon: 302740713, lat: 599384615, height: 189420, hMSL: 173491, hAcc: 38464, vAcc: 37213
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217886700, lon: 302739016, lat: 599385329, height: 183902, hMSL: 167973, hAcc: 39870, vAcc: 16699
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217887400, lon: 302737624, lat: 599385728, height: 182823, hMSL: 166894, hAcc: 40171, vAcc: 13229
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217888300, lon: 302735961, lat: 599386531, height: 181779, hMSL: 165850, hAcc: 39801, vAcc: 11224
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217889000, lon: 302734995, lat: 599386904, height: 181188, hMSL: 165260, hAcc: 39072, vAcc: 10252
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217889700, lon: 302733798, lat: 599387424, height: 180425, hMSL: 164496, hAcc: 38651, vAcc: 9653
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217890400, lon: 302732842, lat: 599387985, height: 179780, hMSL: 163851, hAcc: 38219, vAcc: 9207
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217891300, lon: 302731480, lat: 599388559, height: 179144, hMSL: 163215, hAcc: 37535, vAcc: 8751
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217892000, lon: 302730738, lat: 599388843, height: 186987, hMSL: 171058, hAcc: 37693, vAcc: 76064
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217892700, lon: 302729970, lat: 599389218, height: 188388, hMSL: 172459, hAcc: 37670, vAcc: 76349
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217893400, lon: 302729212, lat: 599389394, height: 189124, hMSL: 173195, hAcc: 37395, vAcc: 76041
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217894300, lon: 302728381, lat: 599389667, height: 188887, hMSL: 172958, hAcc: 37030, vAcc: 75556
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217895000, lon: 302727909, lat: 599389647, height: 190012, hMSL: 174083, hAcc: 36687, vAcc: 74902
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217895700, lon: 302727311, lat: 599390022, height: 189819, hMSL: 173890, hAcc: 36398, vAcc: 74289
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217896400, lon: 302726709, lat: 599390075, height: 190339, hMSL: 174410, hAcc: 36020, vAcc: 73634
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217897300, lon: 302726195, lat: 599390333, height: 185142, hMSL: 169214, hAcc: 35372, vAcc: 15965
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217898000, lon: 302725650, lat: 599390552, height: 185110, hMSL: 169181, hAcc: 35062, vAcc: 12324
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217898700, lon: 302725554, lat: 599390494, height: 185050, hMSL: 169121, hAcc: 34930, vAcc: 10723
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217899400, lon: 302725542, lat: 599390563, height: 184983, hMSL: 169054, hAcc: 34836, vAcc: 9768
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217900300, lon: 302724895, lat: 599390835, height: 191508, hMSL: 175579, hAcc: 34883, vAcc: 72065
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217901000, lon: 302724826, lat: 599390694, height: 193695, hMSL: 177766, hAcc: 34974, vAcc: 71939
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217901700, lon: 302724454, lat: 599390906, height: 194874, hMSL: 178945, hAcc: 35101, vAcc: 71796
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217902400, lon: 302724050, lat: 599390968, height: 195409, hMSL: 179480, hAcc: 35219, vAcc: 71767
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217903300, lon: 302723260, lat: 599391384, height: 195670, hMSL: 179742, hAcc: 35388, vAcc: 71916
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217904000, lon: 302722669, lat: 599391473, height: 195759, hMSL: 179830, hAcc: 35526, vAcc: 71874
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217904700, lon: 302722002, lat: 599391735, height: 195822, hMSL: 179893, hAcc: 35638, vAcc: 71818
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217905400, lon: 302720981, lat: 599392330, height: 196407, hMSL: 180478, hAcc: 35809, vAcc: 72106
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217907000, lon: 302720025, lat: 599392687, height: 196188, hMSL: 180259, hAcc: 36244, vAcc: 71826
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217907700, lon: 302719469, lat: 599392825, height: 196658, hMSL: 180729, hAcc: 36401, vAcc: 71821
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217908400, lon: 302719157, lat: 599392804, height: 197366, hMSL: 181437, hAcc: 36546, vAcc: 71974
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217909300, lon: 302718585, lat: 599393177, height: 197947, hMSL: 182018, hAcc: 36683, vAcc: 71814
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217910000, lon: 302718120, lat: 599393529, height: 198710, hMSL: 182781, hAcc: 36817, vAcc: 71818
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217910700, lon: 302718165, lat: 599393570, height: 197363, hMSL: 181434, hAcc: 36826, vAcc: 24808
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217911400, lon: 302718174, lat: 599393652, height: 196377, hMSL: 180448, hAcc: 36805, vAcc: 14874
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217912300, lon: 302718179, lat: 599393543, height: 195990, hMSL: 180061, hAcc: 36841, vAcc: 11508
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217913000, lon: 302718549, lat: 599393185, height: 196018, hMSL: 180089, hAcc: 36890, vAcc: 10250
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217913700, lon: 302719178, lat: 599392861, height: 195787, hMSL: 179858, hAcc: 36924, vAcc: 9440
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217914400, lon: 302719754, lat: 599392380, height: 195505, hMSL: 179576, hAcc: 36981, vAcc: 8871
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217915300, lon: 302720267, lat: 599391860, height: 194949, hMSL: 179020, hAcc: 36996, vAcc: 8350
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217916000, lon: 302720898, lat: 599390988, height: 194461, hMSL: 178532, hAcc: 37102, vAcc: 8068
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217916700, lon: 302721577, lat: 599390260, height: 193911, hMSL: 177982, hAcc: 37225, vAcc: 7856
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217917400, lon: 302721642, lat: 599390051, height: 193375, hMSL: 177446, hAcc: 37363, vAcc: 7703
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217918300, lon: 302721571, lat: 599389707, height: 192971, hMSL: 177042, hAcc: 37483, vAcc: 7570
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217919000, lon: 302721035, lat: 599389812, height: 192843, hMSL: 176913, hAcc: 37639, vAcc: 7510
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217919700, lon: 302720459, lat: 599389790, height: 192759, hMSL: 176830, hAcc: 37838, vAcc: 7487
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217920400, lon: 302719799, lat: 599390019, height: 192611, hMSL: 176681, hAcc: 38027, vAcc: 7495
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217921300, lon: 302718943, lat: 599390530, height: 192518, hMSL: 176589, hAcc: 38278, vAcc: 7548
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217922000, lon: 302718576, lat: 599390444, height: 198264, hMSL: 182335, hAcc: 38436, vAcc: 71405
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217922700, lon: 302717904, lat: 599390897, height: 197936, hMSL: 182007, hAcc: 38667, vAcc: 71379
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217923400, lon: 302717344, lat: 599391183, height: 197200, hMSL: 181271, hAcc: 38926, vAcc: 71560
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217924300, lon: 302716885, lat: 599391330, height: 197081, hMSL: 181152, hAcc: 39181, vAcc: 71548
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217925000, lon: 302716451, lat: 599391669, height: 197190, hMSL: 181261, hAcc: 39358, vAcc: 71541
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217925700, lon: 302715938, lat: 599391941, height: 197840, hMSL: 181911, hAcc: 39519, vAcc: 71299
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217926400, lon: 302715919, lat: 599391854, height: 197894, hMSL: 181965, hAcc: 39675, vAcc: 71301
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217927300, lon: 302715401, lat: 599392086, height: 197638, hMSL: 181708, hAcc: 39931, vAcc: 71038
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217928000, lon: 302715190, lat: 599392241, height: 197715, hMSL: 181786, hAcc: 40080, vAcc: 71042
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217928700, lon: 302715096, lat: 599392047, height: 197371, hMSL: 181441, hAcc: 40277, vAcc: 71107
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217929400, lon: 302715246, lat: 599391595, height: 197309, hMSL: 181380, hAcc: 40397, vAcc: 71097
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217930300, lon: 302714653, lat: 599391927, height: 197833, hMSL: 181904, hAcc: 40667, vAcc: 70955
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217931000, lon: 302713712, lat: 599392829, height: 198661, hMSL: 182732, hAcc: 40765, vAcc: 70687
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217931700, lon: 302713282, lat: 599393235, height: 198773, hMSL: 182844, hAcc: 41042, vAcc: 71113
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217932400, lon: 302712820, lat: 599393661, height: 199319, hMSL: 183389, hAcc: 41284, vAcc: 70780
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217933300, lon: 302712388, lat: 599393842, height: 199541, hMSL: 183611, hAcc: 41520, vAcc: 70761
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217934000, lon: 302712749, lat: 599393074, height: 200101, hMSL: 184171, hAcc: 41626, vAcc: 70760
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217934700, lon: 302712690, lat: 599392617, height: 199816, hMSL: 183887, hAcc: 41805, vAcc: 70694
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217935400, lon: 302712554, lat: 599392580, height: 200226, hMSL: 184297, hAcc: 42100, vAcc: 70746
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217937000, lon: 302712447, lat: 599392325, height: 199597, hMSL: 183668, hAcc: 42717, vAcc: 70847
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217937700, lon: 302712313, lat: 599392608, height: 199508, hMSL: 183578, hAcc: 43496, vAcc: 70764
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217938400, lon: 302712019, lat: 599392763, height: 199678, hMSL: 183748, hAcc: 44022, vAcc: 70426
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217939100, lon: 302711964, lat: 599392790, height: 199678, hMSL: 183749, hAcc: 45347, vAcc: 70426
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217940000, lon: 302711894, lat: 599392825, height: 199678, hMSL: 183749, hAcc: 47165, vAcc: 70427
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217940700, lon: 302711839, lat: 599392852, height: 199679, hMSL: 183749, hAcc: 48674, vAcc: 70427
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217941400, lon: 302711784, lat: 599392880, height: 199679, hMSL: 183749, hAcc: 50270, vAcc: 70428
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217942300, lon: 302711713, lat: 599392915, height: 199679, hMSL: 183750, hAcc: 52455, vAcc: 70430
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217943000, lon: 302711658, lat: 599392942, height: 199679, hMSL: 183750, hAcc: 54260, vAcc: 70433
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217943700, lon: 302711603, lat: 599392969, height: 199680, hMSL: 183750, hAcc: 56159, vAcc: 70436
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217944400, lon: 302711548, lat: 599392996, height: 199680, hMSL: 183750, hAcc: 58151, vAcc: 70440
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217945100, lon: 302711493, lat: 599393024, height: 199680, hMSL: 183751, hAcc: 60237, vAcc: 70445
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217946000, lon: 302711422, lat: 599393059, height: 199680, hMSL: 183751, hAcc: 63057, vAcc: 70453
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217946500, lon: 302711383, lat: 599393078, height: 199680, hMSL: 183751, hAcc: 64689, vAcc: 70459
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217947000, lon: 302711343, lat: 599393098, height: 199681, hMSL: 183751, hAcc: 66368, vAcc: 70465
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217947700, lon: 302711288, lat: 599393125, height: 199681, hMSL: 183751, hAcc: 68796, vAcc: 70475
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217948400, lon: 302711233, lat: 599393152, height: 199681, hMSL: 183752, hAcc: 71314, vAcc: 70487
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217949300, lon: 302711233, lat: 599393152, height: 199681, hMSL: 183752, hAcc: 74679, vAcc: 70504
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217950000, lon: 302711233, lat: 599393152, height: 199681, hMSL: 183752, hAcc: 77395, vAcc: 70520
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217950700, lon: 302711233, lat: 599393152, height: 199681, hMSL: 183752, hAcc: 80194, vAcc: 70537
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217951400, lon: 302711233, lat: 599393152, height: 199681, hMSL: 183752, hAcc: 83076, vAcc: 70557
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217952300, lon: 302711233, lat: 599393152, height: 199681, hMSL: 183752, hAcc: 86898, vAcc: 70586
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217953000, lon: 302711233, lat: 599393152, height: 199681, hMSL: 183752, hAcc: 89961, vAcc: 70611
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217953700, lon: 302711233, lat: 599393152, height: 199681, hMSL: 183752, hAcc: 93100, vAcc: 70639
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217954400, lon: 303431199, lat: 598485548, height: 207000, hMSL: 191011, hAcc: 1859291, vAcc: 70710
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217955300, lon: 303456349, lat: 598453176, height: 207304, hMSL: 191312, hAcc: 714048, vAcc: 76342
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217956000, lon: 303474918, lat: 598429323, height: 207480, hMSL: 191487, hAcc: 727531, vAcc: 77476
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217956700, lon: 303493485, lat: 598405469, height: 207669, hMSL: 191674, hAcc: 751184, vAcc: 79845
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217957400, lon: 303512048, lat: 598381615, height: 207870, hMSL: 191874, hAcc: 784088, vAcc: 83349
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217958300, lon: 303535912, lat: 598350946, height: 208149, hMSL: 192150, hAcc: 838198, vAcc: 89303
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217959000, lon: 303554469, lat: 598327091, height: 208379, hMSL: 192380, hAcc: 888038, vAcc: 94885
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217959700, lon: 303573024, lat: 598303236, height: 208623, hMSL: 192622, hAcc: 943496, vAcc: 101151
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217960400, lon: 303591576, lat: 598279381, height: 208879, hMSL: 192877, hAcc: 1003641, vAcc: 107985
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217961300, lon: 303615425, lat: 598248710, height: 209228, hMSL: 193223, hAcc: 1086599, vAcc: 117448
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217962000, lon: 303633971, lat: 598224854, height: 209513, hMSL: 193507, hAcc: 1154696, vAcc: 125235
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217962500, lon: 303647217, lat: 598207814, height: 209725, hMSL: 193718, hAcc: 1204928, vAcc: 130987
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217963000, lon: 303660461, lat: 598190774, height: 209944, hMSL: 193935, hAcc: 1256308, vAcc: 136874
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217963700, lon: 303679001, lat: 598166918, height: 210260, hMSL: 194250, hAcc: 1329911, vAcc: 145315
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217964400, lon: 303697538, lat: 598143061, height: 210589, hMSL: 194578, hAcc: 1405189, vAcc: 153953
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217965300, lon: 303721367, lat: 598112388, height: 211032, hMSL: 195018, hAcc: 1504028, vAcc: 165301
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217966000, lon: 303721367, lat: 598112388, height: 211032, hMSL: 195018, hAcc: 1582252, vAcc: 174234
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217966500, lon: 303721367, lat: 598112388, height: 211032, hMSL: 195018, hAcc: 1638742, vAcc: 180682
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217967000, lon: 303721367, lat: 598112388, height: 211032, hMSL: 195018, hAcc: 1684265, vAcc: 185878
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217967500, lon: 303721367, lat: 598112388, height: 211032, hMSL: 195018, hAcc: 1684265, vAcc: 185878
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217968000, lon: 303721367, lat: 598112388, height: 211032, hMSL: 195018, hAcc: 1684265, vAcc: 185878
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217968700, lon: 302706283, lat: 599407403, height: 190922, hMSL: 174994, hAcc: 44939, vAcc: 87554
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217969400, lon: 302703493, lat: 599406936, height: 198900, hMSL: 182972, hAcc: 28912, vAcc: 77773
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217970300, lon: 302702372, lat: 599406697, height: 202501, hMSL: 186573, hAcc: 21719, vAcc: 74377
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217971000, lon: 302701973, lat: 599406617, height: 203359, hMSL: 187431, hAcc: 18764, vAcc: 73190
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217971700, lon: 302701666, lat: 599406549, height: 203901, hMSL: 187972, hAcc: 16744, vAcc: 72530
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217972400, lon: 302701449, lat: 599406491, height: 204762, hMSL: 188834, hAcc: 15286, vAcc: 71994
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217973300, lon: 302701246, lat: 599406435, height: 205860, hMSL: 189931, hAcc: 13891, vAcc: 71557
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217974000, lon: 302701134, lat: 599406405, height: 205833, hMSL: 189905, hAcc: 13049, vAcc: 71285
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217974700, lon: 302701024, lat: 599406385, height: 204993, hMSL: 189064, hAcc: 12354, vAcc: 71185
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217975400, lon: 302700912, lat: 599406370, height: 204285, hMSL: 188357, hAcc: 11766, vAcc: 71037
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217976300, lon: 302700770, lat: 599406356, height: 205737, hMSL: 189808, hAcc: 11126, vAcc: 70950
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217977000, lon: 302700678, lat: 599406347, height: 205803, hMSL: 189875, hAcc: 10701, vAcc: 70910
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217977700, lon: 302700510, lat: 599406273, height: 206272, hMSL: 190344, hAcc: 10342, vAcc: 71116
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217978400, lon: 302700393, lat: 599406238, height: 206204, hMSL: 190275, hAcc: 10026, vAcc: 71088
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217980000, lon: 302700202, lat: 599406209, height: 205650, hMSL: 189722, hAcc: 9425, vAcc: 71040
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217980700, lon: 302700138, lat: 599406207, height: 205709, hMSL: 189781, hAcc: 9216, vAcc: 71257
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217981400, lon: 302700076, lat: 599406199, height: 206112, hMSL: 190184, hAcc: 9034, vAcc: 71244
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217982300, lon: 302700018, lat: 599406193, height: 206104, hMSL: 190176, hAcc: 8843, vAcc: 71448
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217983000, lon: 302699961, lat: 599406178, height: 205856, hMSL: 189927, hAcc: 8717, vAcc: 71437
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217983700, lon: 302699915, lat: 599406163, height: 206262, hMSL: 190334, hAcc: 8604, vAcc: 71435
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217984400, lon: 302699881, lat: 599406156, height: 206219, hMSL: 190291, hAcc: 8499, vAcc: 71434
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217985300, lon: 302699779, lat: 599406100, height: 207014, hMSL: 191086, hAcc: 8380, vAcc: 71422
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217986000, lon: 302699181, lat: 599405575, height: 181739, hMSL: 165810, hAcc: 42577, vAcc: 53018
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217986700, lon: 302698500, lat: 599404591, height: 163018, hMSL: 147089, hAcc: 34721, vAcc: 47945
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217987400, lon: 302698009, lat: 599403914, height: 150174, hMSL: 134245, hAcc: 31038, vAcc: 44773
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217988300, lon: 302697619, lat: 599403227, height: 136614, hMSL: 120685, hAcc: 28106, vAcc: 41819
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217989000, lon: 302697468, lat: 599402872, height: 128665, hMSL: 112736, hAcc: 26446, vAcc: 39874
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217989700, lon: 302697340, lat: 599402544, height: 121963, hMSL: 106034, hAcc: 25122, vAcc: 38133
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217990400, lon: 302697178, lat: 599402269, height: 117206, hMSL: 101276, hAcc: 24000, vAcc: 36553
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217991100, lon: 302697018, lat: 599402027, height: 113318, hMSL: 97389, hAcc: 23006, vAcc: 35025
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217992000, lon: 302696933, lat: 599401821, height: 109157, hMSL: 93228, hAcc: 21909, vAcc: 33327
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217992700, lon: 302698216, lat: 599404115, height: 173793, hMSL: 157864, hAcc: 18098, vAcc: 73309
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217993400, lon: 302698730, lat: 599404891, height: 184690, hMSL: 168761, hAcc: 16905, vAcc: 72802
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217994300, lon: 302699225, lat: 599405438, height: 190305, hMSL: 174376, hAcc: 16220, vAcc: 72437
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217995000, lon: 302699523, lat: 599405709, height: 192610, hMSL: 176681, hAcc: 15965, vAcc: 72318
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217995700, lon: 302699849, lat: 599405988, height: 194710, hMSL: 178781, hAcc: 15859, vAcc: 72585
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217996400, lon: 302700025, lat: 599406151, height: 195548, hMSL: 179619, hAcc: 15831, vAcc: 72188
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217997300, lon: 302700223, lat: 599406316, height: 192487, hMSL: 176558, hAcc: 15889, vAcc: 39454
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 217998000, lon: 302700442, lat: 599406302, height: 182719, hMSL: 166791, hAcc: 13908, vAcc: 10492
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217998700, lon: 302700126, lat: 599405914, height: 177821, hMSL: 161892, hAcc: 12685, vAcc: 9557
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 217999400, lon: 302699791, lat: 599405498, height: 172604, hMSL: 156675, hAcc: 11497, vAcc: 9071
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218000300, lon: 302698915, lat: 599404614, height: 163528, hMSL: 147599, hAcc: 9862, vAcc: 8530
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218001000, lon: 302698211, lat: 599403956, height: 157308, hMSL: 141379, hAcc: 8854, vAcc: 8172
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218001700, lon: 302697907, lat: 599403613, height: 152284, hMSL: 136355, hAcc: 8254, vAcc: 7898
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218002400, lon: 302697528, lat: 599403247, height: 148278, hMSL: 132349, hAcc: 7863, vAcc: 7713
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218003300, lon: 302697163, lat: 599402865, height: 143934, hMSL: 128005, hAcc: 7644, vAcc: 7615
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218004000, lon: 302697115, lat: 599402729, height: 140760, hMSL: 124831, hAcc: 7408, vAcc: 7502
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218004700, lon: 302696958, lat: 599402513, height: 137404, hMSL: 121475, hAcc: 7143, vAcc: 7372
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218005400, lon: 302696721, lat: 599402268, height: 134550, hMSL: 118621, hAcc: 6912, vAcc: 7247
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218006300, lon: 302696535, lat: 599402045, height: 131128, hMSL: 115198, hAcc: 6687, vAcc: 7105
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218007000, lon: 302696523, lat: 599401980, height: 129113, hMSL: 113184, hAcc: 6519, vAcc: 7010
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218007700, lon: 302696302, lat: 599401778, height: 127261, hMSL: 111332, hAcc: 6397, vAcc: 6928
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218008400, lon: 302696071, lat: 599401561, height: 125241, hMSL: 109311, hAcc: 6283, vAcc: 6863
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218009300, lon: 302695911, lat: 599401374, height: 122735, hMSL: 106806, hAcc: 6269, vAcc: 6823
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218010000, lon: 302695900, lat: 599401286, height: 120148, hMSL: 104219, hAcc: 6289, vAcc: 6797
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218010700, lon: 302695957, lat: 599401255, height: 118034, hMSL: 102105, hAcc: 6247, vAcc: 6780
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218011400, lon: 302695782, lat: 599401037, height: 115131, hMSL: 99202, hAcc: 6208, vAcc: 6767
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218012300, lon: 302695535, lat: 599400753, height: 111186, hMSL: 95257, hAcc: 6130, vAcc: 6757
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218013000, lon: 302695513, lat: 599400643, height: 108180, hMSL: 92251, hAcc: 6022, vAcc: 6751
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218013700, lon: 302695434, lat: 599400507, height: 105271, hMSL: 89342, hAcc: 5940, vAcc: 6759
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218014400, lon: 302695384, lat: 599400399, height: 102414, hMSL: 86485, hAcc: 5833, vAcc: 6770
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218015300, lon: 302695309, lat: 599400255, height: 98758, hMSL: 82828, hAcc: 5759, vAcc: 6796
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218016000, lon: 302695240, lat: 599400134, height: 95919, hMSL: 79990, hAcc: 5679, vAcc: 6821
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218016700, lon: 302695247, lat: 599400068, height: 93217, hMSL: 77288, hAcc: 5669, vAcc: 6860
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218017400, lon: 302695223, lat: 599399983, height: 90715, hMSL: 74785, hAcc: 5620, vAcc: 6895
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218018300, lon: 302695150, lat: 599399851, height: 88019, hMSL: 72090, hAcc: 5548, vAcc: 6946
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218019000, lon: 302695168, lat: 599399808, height: 86227, hMSL: 70297, hAcc: 5501, vAcc: 6985
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218019700, lon: 302695106, lat: 599399724, height: 84918, hMSL: 68988, hAcc: 5457, vAcc: 7029
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218020400, lon: 302695058, lat: 599399658, height: 83763, hMSL: 67834, hAcc: 5393, vAcc: 7026
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218021300, lon: 302695031, lat: 599399599, height: 82352, hMSL: 66423, hAcc: 5331, vAcc: 7069
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218022000, lon: 302695012, lat: 599399586, height: 82553, hMSL: 66623, hAcc: 5283, vAcc: 7099
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218022700, lon: 302694969, lat: 599399568, height: 83020, hMSL: 67090, hAcc: 5261, vAcc: 7134
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218023400, lon: 302694955, lat: 599399575, height: 83537, hMSL: 67607, hAcc: 5233, vAcc: 7150
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218024300, lon: 302694895, lat: 599399520, height: 83261, hMSL: 67331, hAcc: 5242, vAcc: 7196
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218025000, lon: 302694921, lat: 599399546, height: 83763, hMSL: 67834, hAcc: 5248, vAcc: 7217
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218025700, lon: 302694979, lat: 599399588, height: 84035, hMSL: 68106, hAcc: 5239, vAcc: 7251
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218026400, lon: 302694895, lat: 599399537, height: 84470, hMSL: 68541, hAcc: 5231, vAcc: 7261
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218027300, lon: 302694908, lat: 599399528, height: 83938, hMSL: 68008, hAcc: 5208, vAcc: 7268
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218028000, lon: 302694964, lat: 599399579, height: 84438, hMSL: 68508, hAcc: 5202, vAcc: 7279
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218028700, lon: 302694942, lat: 599399560, height: 84342, hMSL: 68413, hAcc: 5225, vAcc: 7291
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218029400, lon: 302695018, lat: 599399629, height: 85019, hMSL: 69089, hAcc: 5202, vAcc: 7287
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218030300, lon: 302695023, lat: 599399634, height: 85185, hMSL: 69256, hAcc: 5166, vAcc: 7273
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218031000, lon: 302694979, lat: 599399576, height: 84181, hMSL: 68251, hAcc: 5144, vAcc: 7263
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218031700, lon: 302695129, lat: 599399681, height: 84565, hMSL: 68636, hAcc: 5122, vAcc: 7251
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218032400, lon: 302695097, lat: 599399633, height: 83299, hMSL: 67369, hAcc: 5103, vAcc: 7247
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218033300, lon: 302695072, lat: 599399616, height: 83526, hMSL: 67597, hAcc: 5107, vAcc: 7247
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218034000, lon: 302695003, lat: 599399550, height: 82967, hMSL: 67037, hAcc: 5096, vAcc: 7245
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218034700, lon: 302694902, lat: 599399454, height: 81893, hMSL: 65963, hAcc: 5098, vAcc: 7268
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218035400, lon: 302694936, lat: 599399459, height: 81366, hMSL: 65436, hAcc: 5120, vAcc: 7299
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218036300, lon: 302694918, lat: 599399441, height: 81496, hMSL: 65567, hAcc: 5137, vAcc: 7326
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218037000, lon: 302694918, lat: 599399424, height: 81003, hMSL: 65073, hAcc: 5151, vAcc: 7350
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218037700, lon: 302694919, lat: 599399414, height: 80690, hMSL: 64760, hAcc: 5184, vAcc: 7371
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218038400, lon: 302694916, lat: 599399399, height: 80398, hMSL: 64468, hAcc: 5195, vAcc: 7388
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218039300, lon: 302694948, lat: 599399412, height: 80291, hMSL: 64362, hAcc: 5208, vAcc: 7408
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218040000, lon: 302694972, lat: 599399422, height: 80237, hMSL: 64308, hAcc: 5216, vAcc: 7416
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218040700, lon: 302694994, lat: 599399436, height: 80287, hMSL: 64358, hAcc: 5223, vAcc: 7426
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218041400, lon: 302694921, lat: 599399391, height: 80744, hMSL: 64815, hAcc: 5234, vAcc: 7437
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218042300, lon: 302694855, lat: 599399331, height: 80495, hMSL: 64566, hAcc: 5248, vAcc: 7454
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218043000, lon: 302694824, lat: 599399300, height: 80114, hMSL: 64185, hAcc: 5244, vAcc: 7457
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218043700, lon: 302694839, lat: 599399309, height: 80327, hMSL: 64398, hAcc: 5245, vAcc: 7383
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218044400, lon: 302694810, lat: 599399285, height: 80300, hMSL: 64370, hAcc: 5236, vAcc: 7210
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218045300, lon: 302694817, lat: 599399299, height: 80730, hMSL: 64801, hAcc: 5218, vAcc: 7078
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218046000, lon: 302694785, lat: 599399266, height: 80494, hMSL: 64564, hAcc: 5206, vAcc: 6994
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218046700, lon: 302694796, lat: 599399298, height: 81342, hMSL: 65412, hAcc: 5210, vAcc: 6937
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218047400, lon: 302694872, lat: 599399365, height: 82203, hMSL: 66274, hAcc: 5202, vAcc: 6874
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218048100, lon: 302694894, lat: 599399380, height: 82354, hMSL: 66425, hAcc: 5187, vAcc: 6812
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218049000, lon: 302694919, lat: 599399396, height: 82548, hMSL: 66619, hAcc: 5185, vAcc: 6747
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218049500, lon: 302694910, lat: 599399390, height: 82708, hMSL: 66778, hAcc: 5173, vAcc: 6704
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218050000, lon: 302694946, lat: 599399427, height: 83331, hMSL: 67401, hAcc: 5164, vAcc: 6665
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218050700, lon: 302694907, lat: 599399382, height: 82746, hMSL: 66817, hAcc: 5157, vAcc: 6615
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218051400, lon: 302694955, lat: 599399420, height: 83132, hMSL: 67202, hAcc: 5132, vAcc: 6553
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218052300, lon: 302694997, lat: 599399450, height: 83364, hMSL: 67434, hAcc: 5124, vAcc: 6500
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218053000, lon: 302695084, lat: 599399524, height: 84112, hMSL: 68182, hAcc: 5108, vAcc: 6451
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218053700, lon: 302695101, lat: 599399526, height: 83971, hMSL: 68042, hAcc: 5111, vAcc: 6418
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218054400, lon: 302695189, lat: 599399591, height: 84500, hMSL: 68571, hAcc: 5094, vAcc: 6367
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218056000, lon: 302695430, lat: 599399741, height: 85223, hMSL: 69293, hAcc: 5070, vAcc: 6284
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218056700, lon: 302695498, lat: 599399765, height: 85030, hMSL: 69101, hAcc: 5067, vAcc: 6259
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218057400, lon: 302695498, lat: 599399770, height: 84991, hMSL: 69061, hAcc: 5064, vAcc: 6237
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218058300, lon: 302695664, lat: 599399876, height: 85598, hMSL: 69669, hAcc: 5060, vAcc: 6212
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218059000, lon: 302695850, lat: 599399973, height: 85795, hMSL: 69866, hAcc: 5054, vAcc: 6194
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218059700, lon: 302695924, lat: 599399997, height: 85542, hMSL: 69612, hAcc: 5048, vAcc: 6178
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218060400, lon: 302696014, lat: 599400048, height: 85800, hMSL: 69870, hAcc: 5046, vAcc: 6163
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218061300, lon: 302696269, lat: 599400161, height: 85696, hMSL: 69767, hAcc: 5049, vAcc: 6146
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218062000, lon: 302696432, lat: 599400236, height: 85758, hMSL: 69828, hAcc: 5054, vAcc: 6133
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218062700, lon: 302696558, lat: 599400294, height: 85652, hMSL: 69723, hAcc: 5049, vAcc: 6121
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218063400, lon: 302696638, lat: 599400319, height: 85490, hMSL: 69561, hAcc: 5044, vAcc: 6108
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218064300, lon: 302696662, lat: 599400314, height: 85171, hMSL: 69242, hAcc: 5039, vAcc: 6095
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218065000, lon: 302696655, lat: 599400310, height: 85188, hMSL: 69259, hAcc: 5048, vAcc: 6086
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218065700, lon: 302696671, lat: 599400291, height: 84775, hMSL: 68845, hAcc: 5051, vAcc: 6077
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218066400, lon: 302696835, lat: 599400347, height: 84236, hMSL: 68307, hAcc: 5060, vAcc: 6071
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218067300, lon: 302697135, lat: 599400457, height: 84272, hMSL: 68343, hAcc: 5058, vAcc: 6064
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218068000, lon: 302697606, lat: 599400585, height: 85854, hMSL: 69924, hAcc: 5059, vAcc: 6060
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218068700, lon: 302697878, lat: 599400670, height: 86005, hMSL: 70076, hAcc: 5062, vAcc: 6058
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218069400, lon: 302697943, lat: 599400657, height: 85503, hMSL: 69574, hAcc: 5060, vAcc: 6055
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218070300, lon: 302698022, lat: 599400638, height: 84820, hMSL: 68890, hAcc: 5080, vAcc: 6056
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218071000, lon: 302698093, lat: 599400620, height: 84069, hMSL: 68140, hAcc: 5085, vAcc: 6056
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218071700, lon: 302698326, lat: 599400698, height: 83702, hMSL: 67773, hAcc: 5085, vAcc: 6057
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218072400, lon: 302698418, lat: 599400708, height: 83221, hMSL: 67292, hAcc: 5106, vAcc: 6061
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218073300, lon: 302698483, lat: 599400717, height: 82516, hMSL: 66587, hAcc: 5118, vAcc: 6067
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218074000, lon: 302698492, lat: 599400704, height: 82078, hMSL: 66149, hAcc: 5136, vAcc: 6072
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218074700, lon: 302698550, lat: 599400718, height: 81571, hMSL: 65642, hAcc: 5147, vAcc: 6077
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218075400, lon: 302698497, lat: 599400712, height: 81397, hMSL: 65468, hAcc: 5157, vAcc: 6082
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218076100, lon: 302698338, lat: 599400677, height: 81333, hMSL: 65404, hAcc: 5170, vAcc: 6089
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218077000, lon: 302698386, lat: 599400686, height: 81001, hMSL: 65072, hAcc: 5213, vAcc: 6104
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218077700, lon: 302698442, lat: 599400708, height: 81053, hMSL: 65124, hAcc: 5237, vAcc: 6115
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218078400, lon: 302698487, lat: 599400720, height: 80931, hMSL: 65002, hAcc: 5244, vAcc: 6122
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218079300, lon: 302698398, lat: 599400670, height: 80318, hMSL: 64389, hAcc: 5239, vAcc: 6126
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218080000, lon: 302698547, lat: 599400725, height: 79916, hMSL: 63987, hAcc: 5226, vAcc: 6124
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218080700, lon: 302698555, lat: 599400694, height: 79508, hMSL: 63579, hAcc: 5021, vAcc: 5871
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218081400, lon: 302698596, lat: 599400683, height: 79089, hMSL: 63160, hAcc: 5011, vAcc: 5869
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218082300, lon: 302698685, lat: 599400698, height: 78793, hMSL: 62864, hAcc: 4998, vAcc: 5864
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218083000, lon: 302698648, lat: 599400679, height: 78680, hMSL: 62750, hAcc: 4988, vAcc: 5861
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218083700, lon: 302698722, lat: 599400698, height: 78514, hMSL: 62584, hAcc: 4987, vAcc: 5861
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218084400, lon: 302698750, lat: 599400700, height: 78399, hMSL: 62469, hAcc: 4977, vAcc: 5859
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218085300, lon: 302698706, lat: 599400681, height: 77977, hMSL: 62048, hAcc: 4960, vAcc: 5855
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218086000, lon: 302698735, lat: 599400684, height: 77814, hMSL: 61885, hAcc: 5047, vAcc: 5955
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218086700, lon: 302698582, lat: 599400628, height: 77839, hMSL: 61910, hAcc: 5092, vAcc: 6014
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218087400, lon: 302698654, lat: 599400672, height: 77932, hMSL: 62003, hAcc: 5111, vAcc: 6046
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218088300, lon: 302698650, lat: 599400676, height: 77930, hMSL: 62001, hAcc: 5125, vAcc: 6065
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218089000, lon: 302698638, lat: 599400656, height: 77936, hMSL: 62007, hAcc: 5131, vAcc: 6070
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218089700, lon: 302698402, lat: 599400583, height: 78328, hMSL: 62399, hAcc: 5126, vAcc: 6065
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218090400, lon: 302698362, lat: 599400570, height: 78609, hMSL: 62680, hAcc: 5110, vAcc: 6055
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218091300, lon: 302698214, lat: 599400502, height: 78602, hMSL: 62672, hAcc: 5086, vAcc: 6040
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218092000, lon: 302698264, lat: 599400520, height: 78505, hMSL: 62576, hAcc: 5072, vAcc: 6028
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218092700, lon: 302698180, lat: 599400501, height: 78813, hMSL: 62884, hAcc: 5064, vAcc: 6019
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218093400, lon: 302698285, lat: 599400577, height: 79407, hMSL: 63478, hAcc: 5048, vAcc: 6005
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218094100, lon: 302698181, lat: 599400562, height: 80127, hMSL: 64198, hAcc: 5027, vAcc: 5991
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218095000, lon: 302698143, lat: 599400582, height: 80964, hMSL: 65034, hAcc: 5008, vAcc: 5971
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218095700, lon: 302698056, lat: 599400579, height: 81706, hMSL: 65777, hAcc: 5002, vAcc: 5958
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218096400, lon: 302698100, lat: 599400614, height: 82052, hMSL: 66123, hAcc: 4989, vAcc: 5946
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218097300, lon: 302697948, lat: 599400578, height: 82725, hMSL: 66796, hAcc: 4990, vAcc: 5934
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218098000, lon: 302697915, lat: 599400574, height: 82969, hMSL: 67040, hAcc: 4987, vAcc: 5927
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218098700, lon: 302697873, lat: 599400573, height: 83313, hMSL: 67384, hAcc: 4979, vAcc: 5917
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218099400, lon: 302697797, lat: 599400565, height: 83752, hMSL: 67823, hAcc: 4973, vAcc: 5910
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218100300, lon: 302697751, lat: 599400558, height: 83943, hMSL: 68013, hAcc: 4969, vAcc: 5897
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218101000, lon: 302697623, lat: 599400547, height: 83684, hMSL: 67755, hAcc: 4970, vAcc: 5890
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218101500, lon: 302697669, lat: 599400589, height: 84337, hMSL: 68408, hAcc: 4965, vAcc: 5884
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218102000, lon: 302697673, lat: 599400603, height: 84864, hMSL: 68935, hAcc: 4968, vAcc: 5878
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218102700, lon: 302697639, lat: 599400632, height: 85737, hMSL: 69808, hAcc: 4867, vAcc: 5863
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218103400, lon: 302697679, lat: 599400687, height: 86492, hMSL: 70562, hAcc: 4745, vAcc: 5844
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218104300, lon: 302697708, lat: 599400741, height: 87340, hMSL: 71411, hAcc: 4660, vAcc: 5828
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218105000, lon: 302697748, lat: 599400776, height: 87726, hMSL: 71796, hAcc: 4608, vAcc: 5817
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218105700, lon: 302697749, lat: 599400801, height: 88196, hMSL: 72266, hAcc: 4560, vAcc: 5806
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218106400, lon: 302697815, lat: 599400766, height: 86555, hMSL: 70626, hAcc: 4319, vAcc: 5488
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218107100, lon: 302697918, lat: 599400709, height: 84163, hMSL: 68234, hAcc: 4261, vAcc: 5391
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218108000, lon: 302698044, lat: 599400632, height: 81017, hMSL: 65088, hAcc: 4192, vAcc: 5282
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218108700, lon: 302698118, lat: 599400555, height: 78401, hMSL: 62472, hAcc: 4139, vAcc: 5200
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218109400, lon: 302698156, lat: 599400536, height: 77464, hMSL: 61534, hAcc: 4098, vAcc: 5169
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218110300, lon: 302698169, lat: 599400564, height: 77905, hMSL: 61976, hAcc: 4051, vAcc: 5163
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218111000, lon: 302698218, lat: 599400533, height: 76686, hMSL: 60757, hAcc: 4012, vAcc: 5127
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218111700, lon: 302698308, lat: 599400453, height: 73884, hMSL: 57955, hAcc: 3968, vAcc: 5065
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218112400, lon: 302698387, lat: 599400385, height: 71453, hMSL: 55523, hAcc: 3927, vAcc: 5005
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218113300, lon: 302698408, lat: 599400363, height: 70655, hMSL: 54726, hAcc: 3884, vAcc: 4979
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218114000, lon: 302698434, lat: 599400339, height: 69902, hMSL: 53973, hAcc: 3854, vAcc: 4956
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218114700, lon: 302698479, lat: 599400273, height: 67753, hMSL: 51824, hAcc: 3818, vAcc: 4899
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218115400, lon: 302698526, lat: 599400197, height: 65474, hMSL: 49545, hAcc: 3782, vAcc: 4841
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218116300, lon: 302698563, lat: 599400111, height: 63027, hMSL: 47097, hAcc: 3737, vAcc: 4769
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218117000, lon: 302698609, lat: 599400052, height: 61192, hMSL: 45263, hAcc: 3704, vAcc: 4718
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218117700, lon: 302698659, lat: 599399997, height: 59368, hMSL: 43439, hAcc: 3672, vAcc: 4666
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218118400, lon: 302698701, lat: 599399954, height: 57864, hMSL: 41935, hAcc: 3642, vAcc: 4617
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218119300, lon: 302698788, lat: 599399904, height: 55879, hMSL: 39949, hAcc: 3606, vAcc: 4562
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218120000, lon: 302698853, lat: 599399876, height: 54584, hMSL: 38655, hAcc: 3578, vAcc: 4525
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218120700, lon: 302698883, lat: 599399870, height: 54099, hMSL: 38170, hAcc: 3558, vAcc: 4515
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218121400, lon: 302698880, lat: 599399891, height: 54530, hMSL: 38600, hAcc: 3542, vAcc: 4520
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218122300, lon: 302698882, lat: 599399917, height: 55027, hMSL: 39097, hAcc: 3521, vAcc: 4528
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218123000, lon: 302698923, lat: 599399905, height: 54272, hMSL: 38343, hAcc: 3499, vAcc: 4509
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218123700, lon: 302698967, lat: 599399875, height: 53119, hMSL: 37189, hAcc: 3473, vAcc: 4466
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218124400, lon: 302699001, lat: 599399851, height: 52154, hMSL: 36225, hAcc: 3449, vAcc: 4424
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218125300, lon: 302699029, lat: 599399813, height: 50927, hMSL: 34998, hAcc: 3416, vAcc: 4352
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218126000, lon: 302699034, lat: 599399817, height: 50876, hMSL: 34946, hAcc: 3387, vAcc: 4291
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218126700, lon: 302699010, lat: 599399831, height: 51303, hMSL: 35373, hAcc: 3368, vAcc: 4275
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218127400, lon: 302698984, lat: 599399843, height: 51670, hMSL: 35741, hAcc: 3348, vAcc: 4258
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218128300, lon: 302698952, lat: 599399862, height: 52260, hMSL: 36331, hAcc: 3325, vAcc: 4236
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218129000, lon: 302698938, lat: 599399883, height: 52756, hMSL: 36827, hAcc: 3305, vAcc: 4212
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218129700, lon: 302698923, lat: 599399906, height: 53367, hMSL: 37438, hAcc: 3284, vAcc: 4186
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218130400, lon: 302698910, lat: 599399931, height: 53930, hMSL: 38000, hAcc: 3267, vAcc: 4166
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218131300, lon: 302698901, lat: 599399955, height: 54494, hMSL: 38565, hAcc: 3246, vAcc: 4148
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218132000, lon: 302698913, lat: 599399955, height: 54380, hMSL: 38451, hAcc: 3231, vAcc: 4137
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218132700, lon: 302698895, lat: 599399970, height: 54839, hMSL: 38910, hAcc: 3262, vAcc: 4183
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218133400, lon: 302698877, lat: 599399981, height: 55155, hMSL: 39225, hAcc: 3285, vAcc: 4218
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218134300, lon: 302698863, lat: 599399995, height: 55501, hMSL: 39571, hAcc: 3292, vAcc: 4237
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218135000, lon: 302698853, lat: 599400001, height: 55752, hMSL: 39822, hAcc: 3290, vAcc: 4240
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218135700, lon: 302698842, lat: 599400012, height: 55964, hMSL: 40034, hAcc: 3157, vAcc: 4076
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218136400, lon: 302698832, lat: 599400028, height: 56346, hMSL: 40417, hAcc: 3141, vAcc: 4060
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218137300, lon: 302698820, lat: 599400045, height: 56771, hMSL: 40842, hAcc: 3122, vAcc: 4042
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218138000, lon: 302698810, lat: 599400062, height: 57201, hMSL: 41272, hAcc: 3109, vAcc: 4031
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218138700, lon: 302698788, lat: 599400066, height: 57430, hMSL: 41501, hAcc: 3096, vAcc: 4022
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218139400, lon: 302698768, lat: 599400069, height: 57635, hMSL: 41705, hAcc: 3085, vAcc: 4017
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218140300, lon: 302698737, lat: 599400069, height: 57812, hMSL: 41883, hAcc: 3068, vAcc: 3999
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218141000, lon: 302698721, lat: 599400077, height: 58140, hMSL: 42211, hAcc: 3065, vAcc: 4000
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218141700, lon: 302698702, lat: 599400080, height: 58298, hMSL: 42369, hAcc: 3105, vAcc: 4059
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218142400, lon: 302698680, lat: 599400084, height: 58447, hMSL: 42518, hAcc: 3124, vAcc: 4088
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218143300, lon: 302698658, lat: 599400080, height: 58597, hMSL: 42668, hAcc: 3131, vAcc: 4107
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218144000, lon: 302698640, lat: 599400093, height: 58988, hMSL: 43059, hAcc: 3129, vAcc: 4111
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218144700, lon: 302698623, lat: 599400087, height: 58876, hMSL: 42947, hAcc: 3124, vAcc: 4112
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218145400, lon: 302698609, lat: 599400091, height: 59039, hMSL: 43110, hAcc: 3118, vAcc: 4115
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218146300, lon: 302698593, lat: 599400092, height: 59235, hMSL: 43305, hAcc: 3121, vAcc: 4123
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218147000, lon: 302698555, lat: 599400084, height: 59377, hMSL: 43448, hAcc: 3122, vAcc: 4126
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218147700, lon: 302698466, lat: 599400047, height: 59380, hMSL: 43451, hAcc: 3114, vAcc: 4127
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218148400, lon: 302698465, lat: 599400057, height: 59585, hMSL: 43656, hAcc: 3113, vAcc: 4128
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218149300, lon: 302698422, lat: 599400059, height: 59890, hMSL: 43961, hAcc: 3108, vAcc: 4129
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218150000, lon: 302698437, lat: 599400068, height: 60114, hMSL: 44184, hAcc: 3105, vAcc: 4129
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218150700, lon: 302698424, lat: 599400076, height: 60377, hMSL: 44447, hAcc: 3103, vAcc: 4130
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218151400, lon: 302698461, lat: 599400092, height: 60516, hMSL: 44587, hAcc: 3112, vAcc: 4131
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218153000, lon: 302698505, lat: 599400121, height: 61046, hMSL: 45116, hAcc: 3152, vAcc: 4137
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218153700, lon: 302698544, lat: 599400137, height: 61257, hMSL: 45328, hAcc: 3176, vAcc: 4143
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218154400, lon: 302698542, lat: 599400146, height: 61422, hMSL: 45492, hAcc: 3194, vAcc: 4148
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218155300, lon: 302698559, lat: 599400155, height: 61574, hMSL: 45645, hAcc: 3224, vAcc: 4156
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218156000, lon: 302698502, lat: 599400143, height: 61687, hMSL: 45758, hAcc: 3247, vAcc: 4161
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218156700, lon: 302698619, lat: 599400175, height: 61762, hMSL: 45833, hAcc: 3267, vAcc: 4167
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218157400, lon: 302698636, lat: 599400178, height: 61748, hMSL: 45818, hAcc: 3289, vAcc: 4172
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218158300, lon: 302698628, lat: 599400180, height: 61888, hMSL: 45958, hAcc: 3323, vAcc: 4180
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218159000, lon: 302698633, lat: 599400184, height: 61935, hMSL: 46006, hAcc: 3356, vAcc: 4186
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218159700, lon: 302698704, lat: 599400209, height: 62089, hMSL: 46160, hAcc: 3375, vAcc: 4192
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218160400, lon: 302698736, lat: 599400222, height: 62187, hMSL: 46257, hAcc: 3407, vAcc: 4197
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218161300, lon: 302698765, lat: 599400244, height: 62423, hMSL: 46494, hAcc: 3422, vAcc: 4204
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218162000, lon: 302698786, lat: 599400256, height: 62481, hMSL: 46552, hAcc: 3446, vAcc: 4210
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218162700, lon: 302698793, lat: 599400260, height: 62534, hMSL: 46604, hAcc: 3471, vAcc: 4216
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218163400, lon: 302698961, lat: 599400308, height: 62490, hMSL: 46561, hAcc: 3492, vAcc: 4223
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218164300, lon: 302699092, lat: 599400350, height: 62429, hMSL: 46499, hAcc: 3505, vAcc: 4231
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218165000, lon: 302699035, lat: 599400339, height: 62327, hMSL: 46398, hAcc: 3522, vAcc: 4237
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218165700, lon: 302699143, lat: 599400372, height: 62162, hMSL: 46233, hAcc: 3540, vAcc: 4243
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218166400, lon: 302699160, lat: 599400374, height: 61950, hMSL: 46020, hAcc: 3552, vAcc: 4250
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218167300, lon: 302699257, lat: 599400393, height: 61585, hMSL: 45655, hAcc: 3582, vAcc: 4259
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218168000, lon: 302699322, lat: 599400407, height: 61348, hMSL: 45419, hAcc: 3598, vAcc: 4266
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218168700, lon: 302699429, lat: 599400426, height: 60952, hMSL: 45023, hAcc: 3612, vAcc: 4274
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218169400, lon: 302699525, lat: 599400436, height: 60462, hMSL: 44533, hAcc: 3634, vAcc: 4282
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218170300, lon: 302699609, lat: 599400440, height: 59792, hMSL: 43863, hAcc: 3678, vAcc: 4293
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218171000, lon: 302699717, lat: 599400447, height: 59137, hMSL: 43208, hAcc: 3734, vAcc: 4304
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218171700, lon: 302699840, lat: 599400445, height: 58262, hMSL: 42333, hAcc: 3737, vAcc: 4314
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218172400, lon: 302699954, lat: 599400407, height: 57314, hMSL: 41385, hAcc: 3763, vAcc: 4325
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218173300, lon: 302699958, lat: 599400376, height: 56144, hMSL: 40215, hAcc: 3801, vAcc: 4340
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218174000, lon: 302700000, lat: 599400358, height: 55348, hMSL: 39418, hAcc: 3839, vAcc: 4354
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218174700, lon: 302700000, lat: 599400335, height: 54663, hMSL: 38734, hAcc: 3866, vAcc: 4368
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218175400, lon: 302699972, lat: 599400308, height: 54044, hMSL: 38115, hAcc: 3902, vAcc: 4382
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218177000, lon: 302699738, lat: 599400198, height: 52564, hMSL: 36635, hAcc: 4042, vAcc: 4424
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218177700, lon: 302699668, lat: 599400153, height: 51798, hMSL: 35869, hAcc: 4092, vAcc: 4443
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218178400, lon: 302699684, lat: 599400129, height: 50944, hMSL: 35015, hAcc: 4140, vAcc: 4461
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218179300, lon: 302699904, lat: 599400140, height: 49793, hMSL: 33864, hAcc: 4181, vAcc: 4482
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218180000, lon: 302699825, lat: 599400081, height: 48851, hMSL: 32922, hAcc: 4158, vAcc: 4497
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218180700, lon: 302699799, lat: 599400044, height: 47982, hMSL: 32053, hAcc: 4177, vAcc: 4513
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218181400, lon: 302699890, lat: 599400032, height: 46968, hMSL: 31039, hAcc: 4170, vAcc: 4529
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218183000, lon: 302700202, lat: 599400017, height: 44548, hMSL: 28619, hAcc: 4201, vAcc: 4564
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218183700, lon: 302700320, lat: 599400023, height: 43609, hMSL: 27680, hAcc: 4260, vAcc: 4583
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218184400, lon: 302700468, lat: 599400043, height: 42706, hMSL: 26777, hAcc: 4330, vAcc: 4603
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218185300, lon: 302700581, lat: 599400045, height: 41698, hMSL: 25769, hAcc: 4436, vAcc: 4632
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218186000, lon: 302700736, lat: 599400073, height: 40788, hMSL: 24859, hAcc: 4505, vAcc: 4653
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218186700, lon: 302700848, lat: 599400073, height: 39751, hMSL: 23822, hAcc: 4574, vAcc: 4672
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218187400, lon: 302700889, lat: 599400051, height: 38726, hMSL: 22797, hAcc: 4604, vAcc: 4691
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218188300, lon: 302701121, lat: 599400081, height: 37497, hMSL: 21568, hAcc: 4664, vAcc: 4713
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218189000, lon: 302701455, lat: 599400151, height: 36531, hMSL: 20602, hAcc: 4730, vAcc: 4732
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218189700, lon: 302701843, lat: 599400202, height: 35397, hMSL: 19468, hAcc: 4756, vAcc: 4750
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218190400, lon: 302702156, lat: 599400235, height: 34288, hMSL: 18359, hAcc: 4796, vAcc: 4769
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218191300, lon: 302702225, lat: 599400561, height: 42044, hMSL: 26115, hAcc: 4800, vAcc: 4041
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218192000, lon: 302702261, lat: 599400615, height: 43275, hMSL: 27346, hAcc: 4892, vAcc: 3891
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218192700, lon: 302702251, lat: 599400596, height: 42984, hMSL: 27055, hAcc: 5008, vAcc: 3896
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218193400, lon: 302702230, lat: 599400576, height: 42674, hMSL: 26745, hAcc: 5113, vAcc: 3901
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218195000, lon: 302702145, lat: 599400615, height: 43387, hMSL: 27458, hAcc: 5331, vAcc: 3759
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218195700, lon: 302701910, lat: 599400575, height: 43735, hMSL: 27806, hAcc: 5430, vAcc: 3697
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218196400, lon: 302701747, lat: 599400516, height: 43815, hMSL: 27886, hAcc: 5515, vAcc: 3662
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218198000, lon: 302701387, lat: 599400372, height: 43558, hMSL: 27629, hAcc: 5704, vAcc: 3640
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218198700, lon: 302701209, lat: 599400319, height: 43422, hMSL: 27493, hAcc: 5781, vAcc: 3636
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218199400, lon: 302701161, lat: 599400289, height: 43242, hMSL: 27313, hAcc: 5861, vAcc: 3632
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218200300, lon: 302701052, lat: 599400248, height: 43053, hMSL: 27124, hAcc: 5988, vAcc: 3627
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218201000, lon: 302700892, lat: 599400167, height: 42932, hMSL: 27003, hAcc: 6084, vAcc: 3624
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218201700, lon: 302700865, lat: 599400196, height: 42763, hMSL: 26834, hAcc: 6160, vAcc: 3622
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218202400, lon: 302700696, lat: 599400184, height: 42637, hMSL: 26708, hAcc: 6232, vAcc: 3619
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218203300, lon: 302700294, lat: 599400029, height: 42551, hMSL: 26622, hAcc: 6326, vAcc: 3616
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218204000, lon: 302700179, lat: 599400000, height: 42431, hMSL: 26502, hAcc: 6461, vAcc: 3614
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218204700, lon: 302700186, lat: 599399987, height: 42234, hMSL: 26305, hAcc: 6436, vAcc: 5806
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218205400, lon: 302700072, lat: 599399941, height: 42269, hMSL: 26340, hAcc: 6505, vAcc: 5806
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218206300, lon: 302699880, lat: 599399821, height: 42276, hMSL: 26347, hAcc: 6622, vAcc: 5812
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218207000, lon: 302699608, lat: 599399715, height: 42300, hMSL: 26371, hAcc: 6746, vAcc: 5811
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218207700, lon: 302699365, lat: 599399563, height: 42368, hMSL: 26439, hAcc: 6841, vAcc: 5809
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218208400, lon: 302699216, lat: 599399451, height: 42255, hMSL: 26325, hAcc: 6930, vAcc: 5806
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218209100, lon: 302699180, lat: 599399400, height: 42229, hMSL: 26299, hAcc: 7227, vAcc: 5809
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218210000, lon: 302699151, lat: 599399339, height: 42229, hMSL: 26299, hAcc: 7748, vAcc: 5809
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218210700, lon: 302698975, lat: 599399325, height: 40765, hMSL: 24836, hAcc: 7797, vAcc: 4400
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218211400, lon: 302698539, lat: 599399211, height: 40638, hMSL: 24709, hAcc: 7806, vAcc: 3810
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218212300, lon: 302698286, lat: 599399114, height: 40541, hMSL: 24612, hAcc: 7824, vAcc: 3393
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218213000, lon: 302698416, lat: 599399143, height: 40391, hMSL: 24462, hAcc: 7829, vAcc: 3301
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218213500, lon: 302698373, lat: 599399122, height: 40391, hMSL: 24461, hAcc: 8091, vAcc: 3302
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218214000, lon: 302698331, lat: 599399101, height: 40391, hMSL: 24461, hAcc: 8371, vAcc: 3303
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218214700, lon: 302698241, lat: 599399019, height: 40075, hMSL: 24145, hAcc: 8557, vAcc: 3170
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218215400, lon: 302697965, lat: 599398920, height: 39834, hMSL: 23905, hAcc: 8763, vAcc: 3083
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218216300, lon: 302698049, lat: 599398826, height: 39554, hMSL: 23625, hAcc: 8962, vAcc: 2996
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218217000, lon: 302697824, lat: 599398732, height: 39405, hMSL: 23475, hAcc: 8898, vAcc: 2942
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218217700, lon: 302697726, lat: 599398741, height: 39286, hMSL: 23356, hAcc: 8841, vAcc: 2897
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218218400, lon: 302697888, lat: 599398866, height: 39148, hMSL: 23219, hAcc: 8764, vAcc: 2863
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218219300, lon: 302697919, lat: 599399031, height: 38960, hMSL: 23030, hAcc: 8747, vAcc: 2832
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218220000, lon: 302697778, lat: 599399051, height: 38763, hMSL: 22834, hAcc: 8811, vAcc: 2813
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218220700, lon: 302697762, lat: 599398988, height: 38545, hMSL: 22615, hAcc: 8683, vAcc: 2797
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218221400, lon: 302697569, lat: 599398853, height: 38415, hMSL: 22486, hAcc: 8679, vAcc: 2785
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218222300, lon: 302697540, lat: 599398759, height: 38302, hMSL: 22372, hAcc: 8759, vAcc: 2772
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218223000, lon: 302697452, lat: 599398840, height: 38285, hMSL: 22356, hAcc: 8668, vAcc: 4471
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218223700, lon: 302697704, lat: 599399008, height: 38273, hMSL: 22344, hAcc: 8548, vAcc: 4466
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218224400, lon: 302697448, lat: 599398911, height: 38201, hMSL: 22272, hAcc: 8410, vAcc: 4306
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218226000, lon: 302697494, lat: 599399032, height: 37418, hMSL: 21489, hAcc: 7362, vAcc: 3128
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218226700, lon: 302697500, lat: 599399037, height: 37251, hMSL: 21322, hAcc: 7073, vAcc: 2939
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218227400, lon: 302697394, lat: 599399006, height: 37157, hMSL: 21227, hAcc: 6867, vAcc: 2811
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218228300, lon: 302697511, lat: 599399030, height: 37221, hMSL: 21292, hAcc: 6664, vAcc: 2704
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218229000, lon: 302697350, lat: 599398988, height: 37441, hMSL: 21512, hAcc: 6618, vAcc: 2652
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218229700, lon: 302697167, lat: 599398857, height: 37607, hMSL: 21678, hAcc: 6599, vAcc: 2610
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218230400, lon: 302697104, lat: 599398766, height: 37860, hMSL: 21931, hAcc: 6517, vAcc: 2578
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218231300, lon: 302697050, lat: 599398666, height: 38196, hMSL: 22267, hAcc: 6366, vAcc: 2542
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218232000, lon: 302696834, lat: 599398577, height: 38387, hMSL: 22457, hAcc: 6272, vAcc: 2521
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218232700, lon: 302696740, lat: 599398539, height: 38481, hMSL: 22551, hAcc: 6200, vAcc: 2503
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218233400, lon: 302696476, lat: 599398383, height: 38489, hMSL: 22560, hAcc: 6081, vAcc: 2490
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218234300, lon: 302696312, lat: 599398240, height: 38551, hMSL: 22621, hAcc: 5956, vAcc: 2477
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218235000, lon: 302696319, lat: 599398174, height: 38634, hMSL: 22705, hAcc: 5891, vAcc: 2472
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218235700, lon: 302696318, lat: 599398186, height: 38732, hMSL: 22803, hAcc: 5811, vAcc: 2470
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218236400, lon: 302696184, lat: 599398185, height: 38774, hMSL: 22845, hAcc: 5743, vAcc: 2467
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218237300, lon: 302696415, lat: 599398280, height: 38834, hMSL: 22904, hAcc: 5630, vAcc: 2464
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218238000, lon: 302696484, lat: 599398275, height: 38813, hMSL: 22883, hAcc: 5563, vAcc: 2462
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218238700, lon: 302696519, lat: 599398285, height: 38761, hMSL: 22831, hAcc: 5504, vAcc: 2461
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218239400, lon: 302696706, lat: 599398304, height: 38685, hMSL: 22755, hAcc: 5503, vAcc: 2462
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218240500, lon: 302696705, lat: 599398241, height: 38651, hMSL: 22721, hAcc: 5630, vAcc: 2431
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218241000, lon: 302696710, lat: 599398216, height: 38633, hMSL: 22703, hAcc: 5711, vAcc: 2430
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218241700, lon: 302696726, lat: 599398235, height: 38626, hMSL: 22696, hAcc: 5849, vAcc: 2429
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218242400, lon: 302696728, lat: 599398234, height: 38626, hMSL: 22696, hAcc: 6150, vAcc: 2429
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218243300, lon: 302696730, lat: 599398232, height: 38625, hMSL: 22696, hAcc: 6605, vAcc: 2430
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218244000, lon: 302696732, lat: 599398231, height: 38625, hMSL: 22696, hAcc: 7012, vAcc: 2430
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218244500, lon: 302696733, lat: 599398230, height: 38625, hMSL: 22696, hAcc: 7331, vAcc: 2430
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218245000, lon: 302696734, lat: 599398229, height: 38625, hMSL: 22696, hAcc: 7674, vAcc: 2431
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218245700, lon: 302696736, lat: 599398228, height: 38625, hMSL: 22696, hAcc: 8193, vAcc: 2432
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218246400, lon: 302696738, lat: 599398227, height: 38625, hMSL: 22695, hAcc: 8755, vAcc: 2432
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218247500, lon: 302696896, lat: 599398098, height: 38682, hMSL: 22752, hAcc: 9127, vAcc: 2429
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218248000, lon: 302697136, lat: 599398118, height: 38819, hMSL: 22889, hAcc: 9221, vAcc: 2427
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218248700, lon: 302697300, lat: 599398128, height: 38977, hMSL: 23048, hAcc: 9329, vAcc: 2425
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218249400, lon: 302697341, lat: 599398122, height: 38977, hMSL: 23048, hAcc: 9854, vAcc: 2425
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218250300, lon: 302697394, lat: 599398116, height: 38977, hMSL: 23048, hAcc: 10577, vAcc: 2426
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218251000, lon: 302697435, lat: 599398110, height: 38977, hMSL: 23048, hAcc: 11177, vAcc: 2426
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218251700, lon: 302697476, lat: 599398105, height: 38977, hMSL: 23048, hAcc: 11809, vAcc: 2427
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218252400, lon: 302697485, lat: 599398139, height: 39023, hMSL: 23093, hAcc: 11442, vAcc: 2425
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218253300, lon: 302697737, lat: 599398186, height: 39065, hMSL: 23135, hAcc: 11283, vAcc: 2423
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218254000, lon: 302698030, lat: 599398150, height: 39109, hMSL: 23179, hAcc: 11095, vAcc: 2422
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218254700, lon: 302698461, lat: 599398267, height: 39174, hMSL: 23245, hAcc: 10718, vAcc: 2420
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218255400, lon: 302698979, lat: 599398299, height: 39210, hMSL: 23281, hAcc: 10156, vAcc: 2418
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218256300, lon: 302699464, lat: 599398378, height: 39234, hMSL: 23304, hAcc: 9581, vAcc: 2417
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218257000, lon: 302699760, lat: 599398467, height: 39266, hMSL: 23337, hAcc: 9242, vAcc: 2416
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218257700, lon: 302699702, lat: 599398441, height: 39318, hMSL: 23389, hAcc: 8920, vAcc: 2415
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218258400, lon: 302699869, lat: 599398451, height: 39323, hMSL: 23393, hAcc: 8660, vAcc: 2414
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218259300, lon: 302699843, lat: 599398365, height: 39315, hMSL: 23386, hAcc: 8382, vAcc: 3900
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218260000, lon: 302699932, lat: 599398337, height: 39318, hMSL: 23388, hAcc: 8171, vAcc: 3898
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218260700, lon: 302700016, lat: 599398298, height: 39338, hMSL: 23408, hAcc: 7978, vAcc: 3897
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218261400, lon: 302699873, lat: 599398196, height: 39336, hMSL: 23407, hAcc: 7805, vAcc: 3898
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218262300, lon: 302700078, lat: 599398212, height: 39280, hMSL: 23351, hAcc: 7623, vAcc: 3898
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218263000, lon: 302700134, lat: 599398206, height: 39281, hMSL: 23352, hAcc: 7537, vAcc: 3899
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218263700, lon: 302700126, lat: 599398181, height: 39241, hMSL: 23312, hAcc: 7444, vAcc: 3898
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218264400, lon: 302699794, lat: 599398087, height: 39229, hMSL: 23299, hAcc: 7344, vAcc: 3898
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218265300, lon: 302699689, lat: 599398041, height: 39260, hMSL: 23330, hAcc: 7230, vAcc: 3898
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218266000, lon: 302699630, lat: 599398005, height: 39268, hMSL: 23339, hAcc: 7148, vAcc: 3897
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218266700, lon: 302699601, lat: 599397952, height: 39253, hMSL: 23324, hAcc: 7063, vAcc: 3899
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218267400, lon: 302699427, lat: 599397881, height: 39244, hMSL: 23315, hAcc: 7008, vAcc: 3901
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218268300, lon: 302699273, lat: 599397800, height: 39254, hMSL: 23325, hAcc: 6952, vAcc: 3902
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218269000, lon: 302699103, lat: 599397739, height: 39232, hMSL: 23302, hAcc: 6918, vAcc: 3902
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218269700, lon: 302698929, lat: 599397651, height: 39226, hMSL: 23297, hAcc: 6881, vAcc: 3901
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218270400, lon: 302698933, lat: 599397672, height: 39211, hMSL: 23281, hAcc: 6836, vAcc: 3901
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218271300, lon: 302698609, lat: 599397601, height: 39221, hMSL: 23292, hAcc: 6803, vAcc: 3901
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218272000, lon: 302698599, lat: 599397626, height: 39203, hMSL: 23274, hAcc: 6772, vAcc: 3901
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218272700, lon: 302698435, lat: 599397613, height: 39184, hMSL: 23254, hAcc: 6793, vAcc: 3902
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218273400, lon: 302698256, lat: 599397550, height: 39177, hMSL: 23248, hAcc: 6816, vAcc: 3902
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218274300, lon: 302697988, lat: 599397482, height: 39177, hMSL: 23247, hAcc: 6842, vAcc: 3901
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218275000, lon: 302697686, lat: 599397399, height: 39186, hMSL: 23256, hAcc: 6815, vAcc: 3902
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218275700, lon: 302697599, lat: 599397358, height: 39230, hMSL: 23300, hAcc: 6705, vAcc: 3902
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218276400, lon: 302697417, lat: 599397304, height: 39179, hMSL: 23250, hAcc: 6612, vAcc: 3902
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218277300, lon: 302697357, lat: 599397281, height: 39210, hMSL: 23280, hAcc: 6534, vAcc: 3903
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218278000, lon: 302697323, lat: 599397267, height: 39225, hMSL: 23295, hAcc: 6476, vAcc: 3902
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218278700, lon: 302697157, lat: 599397212, height: 39252, hMSL: 23322, hAcc: 6420, vAcc: 3902
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218279400, lon: 302697093, lat: 599397213, height: 39271, hMSL: 23341, hAcc: 6360, vAcc: 3902
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218280300, lon: 302697015, lat: 599397161, height: 38656, hMSL: 22726, hAcc: 6205, vAcc: 3704
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218281000, lon: 302696472, lat: 599397039, height: 37294, hMSL: 21365, hAcc: 6000, vAcc: 3240
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218281700, lon: 302695940, lat: 599396917, height: 36558, hMSL: 20628, hAcc: 5804, vAcc: 2953
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218282400, lon: 302695496, lat: 599396791, height: 36214, hMSL: 20284, hAcc: 5604, vAcc: 2735
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218284000, lon: 302694636, lat: 599396527, height: 35887, hMSL: 19958, hAcc: 5228, vAcc: 2437
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218284700, lon: 302694193, lat: 599396393, height: 36064, hMSL: 20134, hAcc: 5032, vAcc: 2327
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218285400, lon: 302693867, lat: 599396336, height: 36143, hMSL: 20213, hAcc: 4867, vAcc: 2235
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218286100, lon: 302693470, lat: 599396200, height: 36317, hMSL: 20387, hAcc: 4725, vAcc: 2165
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218287000, lon: 302693200, lat: 599396124, height: 36484, hMSL: 20554, hAcc: 4573, vAcc: 2095
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218287700, lon: 302693009, lat: 599396043, height: 36624, hMSL: 20694, hAcc: 4474, vAcc: 2052
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218288400, lon: 302692845, lat: 599396009, height: 36755, hMSL: 20825, hAcc: 4390, vAcc: 2015
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218289300, lon: 302692746, lat: 599395947, height: 36937, hMSL: 21007, hAcc: 4303, vAcc: 1976
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218290000, lon: 302692621, lat: 599395957, height: 37082, hMSL: 21152, hAcc: 4238, vAcc: 1951
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218290700, lon: 302692493, lat: 599395902, height: 37249, hMSL: 21319, hAcc: 4179, vAcc: 1930
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218291400, lon: 302692441, lat: 599395889, height: 37383, hMSL: 21453, hAcc: 4129, vAcc: 1912
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218292300, lon: 302692190, lat: 599395841, height: 37605, hMSL: 21675, hAcc: 4076, vAcc: 1893
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218293000, lon: 302692131, lat: 599395823, height: 37721, hMSL: 21791, hAcc: 4033, vAcc: 1881
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218293700, lon: 302692040, lat: 599395808, height: 37807, hMSL: 21877, hAcc: 4001, vAcc: 1871
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218294400, lon: 302691976, lat: 599395792, height: 37905, hMSL: 21975, hAcc: 3966, vAcc: 1863
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218295300, lon: 302692004, lat: 599395831, height: 37967, hMSL: 22037, hAcc: 3925, vAcc: 1855
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218296000, lon: 302691994, lat: 599395850, height: 38006, hMSL: 22076, hAcc: 3902, vAcc: 1851
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218296700, lon: 302691966, lat: 599395905, height: 38055, hMSL: 22125, hAcc: 3879, vAcc: 1848
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218297400, lon: 302691912, lat: 599395951, height: 38101, hMSL: 22171, hAcc: 3852, vAcc: 1847
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218298300, lon: 302691793, lat: 599395984, height: 38148, hMSL: 22218, hAcc: 3816, vAcc: 1849
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218299000, lon: 302691817, lat: 599396027, height: 38145, hMSL: 22215, hAcc: 3795, vAcc: 1851
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218299700, lon: 302691756, lat: 599396055, height: 38148, hMSL: 22218, hAcc: 3782, vAcc: 1855
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218300400, lon: 302691782, lat: 599396118, height: 38163, hMSL: 22233, hAcc: 3760, vAcc: 1860
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218302000, lon: 302691563, lat: 599396211, height: 38165, hMSL: 22235, hAcc: 3641, vAcc: 1875
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218302700, lon: 302691623, lat: 599396238, height: 38149, hMSL: 22219, hAcc: 3606, vAcc: 1884
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218303400, lon: 302691564, lat: 599396285, height: 38131, hMSL: 22201, hAcc: 3576, vAcc: 1894
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218304300, lon: 302691528, lat: 599396341, height: 38096, hMSL: 22166, hAcc: 3535, vAcc: 1908
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218305000, lon: 302691591, lat: 599396337, height: 38096, hMSL: 22166, hAcc: 3509, vAcc: 1920
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218305700, lon: 302691631, lat: 599396370, height: 38081, hMSL: 22151, hAcc: 3487, vAcc: 1933
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218306400, lon: 302691667, lat: 599396386, height: 38099, hMSL: 22169, hAcc: 3462, vAcc: 1948
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218307300, lon: 302691694, lat: 599396425, height: 38110, hMSL: 22180, hAcc: 3447, vAcc: 1968
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218308000, lon: 302691759, lat: 599396433, height: 38097, hMSL: 22167, hAcc: 3431, vAcc: 1984
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218308700, lon: 302691737, lat: 599396452, height: 38083, hMSL: 22153, hAcc: 3414, vAcc: 2002
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218309400, lon: 302691784, lat: 599396468, height: 38063, hMSL: 22133, hAcc: 3396, vAcc: 2020
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218310300, lon: 302691792, lat: 599396519, height: 38074, hMSL: 22144, hAcc: 3367, vAcc: 2045
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218311000, lon: 302691814, lat: 599396552, height: 38068, hMSL: 22138, hAcc: 3363, vAcc: 2065
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218311700, lon: 302691797, lat: 599396605, height: 38025, hMSL: 22095, hAcc: 3374, vAcc: 2086
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218312400, lon: 302691796, lat: 599396622, height: 37974, hMSL: 22044, hAcc: 3368, vAcc: 2107
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218313300, lon: 302691880, lat: 599396642, height: 37866, hMSL: 21936, hAcc: 3356, vAcc: 2136
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218314000, lon: 302691904, lat: 599396658, height: 37953, hMSL: 22023, hAcc: 3340, vAcc: 2159
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218314700, lon: 302691998, lat: 599396665, height: 37876, hMSL: 21946, hAcc: 3329, vAcc: 2183
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218315600, lon: 302692048, lat: 599396683, height: 38032, hMSL: 22102, hAcc: 3316, vAcc: 2215
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218316300, lon: 302691988, lat: 599396774, height: 37850, hMSL: 21920, hAcc: 3302, vAcc: 2240
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218317000, lon: 302691932, lat: 599396853, height: 37731, hMSL: 21801, hAcc: 3292, vAcc: 2265
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218317700, lon: 302691983, lat: 599396867, height: 37676, hMSL: 21746, hAcc: 3278, vAcc: 2290
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218318400, lon: 302692056, lat: 599396875, height: 37698, hMSL: 21768, hAcc: 3277, vAcc: 2317
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218320000, lon: 302692160, lat: 599396953, height: 37433, hMSL: 21503, hAcc: 3310, vAcc: 2378
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218320700, lon: 302692182, lat: 599397011, height: 37140, hMSL: 21210, hAcc: 3319, vAcc: 2405
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218321400, lon: 302692297, lat: 599397002, height: 36841, hMSL: 20911, hAcc: 3346, vAcc: 2433
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218322300, lon: 302692364, lat: 599397047, height: 36584, hMSL: 20654, hAcc: 3330, vAcc: 2469
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218323000, lon: 302692467, lat: 599397047, height: 36439, hMSL: 20509, hAcc: 3323, vAcc: 2497
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218323700, lon: 302692609, lat: 599397025, height: 36331, hMSL: 20401, hAcc: 3305, vAcc: 2525
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218324400, lon: 302692720, lat: 599397020, height: 36090, hMSL: 20160, hAcc: 3301, vAcc: 2554
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218325300, lon: 302692774, lat: 599397054, height: 36055, hMSL: 20125, hAcc: 3286, vAcc: 2591
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218326000, lon: 302692841, lat: 599397082, height: 35918, hMSL: 19988, hAcc: 3280, vAcc: 2620
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218326700, lon: 302692992, lat: 599397089, height: 35820, hMSL: 19890, hAcc: 3296, vAcc: 2650
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218327400, lon: 302693075, lat: 599397081, height: 35632, hMSL: 19702, hAcc: 3307, vAcc: 2679
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218328300, lon: 302693221, lat: 599397091, height: 35389, hMSL: 19459, hAcc: 3312, vAcc: 2718
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218329000, lon: 302693275, lat: 599397124, height: 35176, hMSL: 19246, hAcc: 3310, vAcc: 2747
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218329700, lon: 302693358, lat: 599397114, height: 34962, hMSL: 19032, hAcc: 3327, vAcc: 2776
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218330400, lon: 302693519, lat: 599397074, height: 34847, hMSL: 18917, hAcc: 3319, vAcc: 2805
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218331300, lon: 302693592, lat: 599397100, height: 34616, hMSL: 18687, hAcc: 3298, vAcc: 2842
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218332000, lon: 302693640, lat: 599397116, height: 34477, hMSL: 18548, hAcc: 3280, vAcc: 2871
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218332700, lon: 302693736, lat: 599397133, height: 34267, hMSL: 18337, hAcc: 3288, vAcc: 2902
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218333400, lon: 302693820, lat: 599397142, height: 33795, hMSL: 17865, hAcc: 3296, vAcc: 2931
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218334300, lon: 302693908, lat: 599397161, height: 33447, hMSL: 17517, hAcc: 3321, vAcc: 2969
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218335000, lon: 302694028, lat: 599397141, height: 33104, hMSL: 17174, hAcc: 3337, vAcc: 2999
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218335700, lon: 302694131, lat: 599397127, height: 32777, hMSL: 16847, hAcc: 3330, vAcc: 3027
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218336400, lon: 302694111, lat: 599397181, height: 32494, hMSL: 16564, hAcc: 3327, vAcc: 3057
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218337300, lon: 302694113, lat: 599397194, height: 32137, hMSL: 16207, hAcc: 3329, vAcc: 3100
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218338000, lon: 302694114, lat: 599397182, height: 31890, hMSL: 15960, hAcc: 3327, vAcc: 3133
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218338700, lon: 302694034, lat: 599397252, height: 31555, hMSL: 15625, hAcc: 3327, vAcc: 3165
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218339400, lon: 302693993, lat: 599397339, height: 31384, hMSL: 15454, hAcc: 3329, vAcc: 3193
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218340300, lon: 302693946, lat: 599397394, height: 31016, hMSL: 15086, hAcc: 3308, vAcc: 3228
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218341000, lon: 302693932, lat: 599397439, height: 30790, hMSL: 14860, hAcc: 3297, vAcc: 3255
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218341700, lon: 302693994, lat: 599397448, height: 30540, hMSL: 14610, hAcc: 3270, vAcc: 3270
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218342400, lon: 302694004, lat: 599397466, height: 30199, hMSL: 14270, hAcc: 3241, vAcc: 3284
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218343300, lon: 302693991, lat: 599397505, height: 29859, hMSL: 13930, hAcc: 3211, vAcc: 3304
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218344000, lon: 302693993, lat: 599397506, height: 29248, hMSL: 13318, hAcc: 3191, vAcc: 3321
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218344700, lon: 302693974, lat: 599397542, height: 28877, hMSL: 12947, hAcc: 3170, vAcc: 3336
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218345400, lon: 302693961, lat: 599397566, height: 28794, hMSL: 12864, hAcc: 3154, vAcc: 3354
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218346300, lon: 302693951, lat: 599397593, height: 28530, hMSL: 12600, hAcc: 3147, vAcc: 3383
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218347000, lon: 302693929, lat: 599397623, height: 28441, hMSL: 12511, hAcc: 3142, vAcc: 3407
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218347700, lon: 302693927, lat: 599397616, height: 28359, hMSL: 12429, hAcc: 3143, vAcc: 3432
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218348400, lon: 302693938, lat: 599397629, height: 28162, hMSL: 12233, hAcc: 3162, vAcc: 3457
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218349300, lon: 302693980, lat: 599397611, height: 28011, hMSL: 12081, hAcc: 3201, vAcc: 3487
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218350000, lon: 302694023, lat: 599397596, height: 27921, hMSL: 11992, hAcc: 3235, vAcc: 3512
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218350700, lon: 302693934, lat: 599397582, height: 27949, hMSL: 12019, hAcc: 3248, vAcc: 3536
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218351400, lon: 302693886, lat: 599397627, height: 28009, hMSL: 12079, hAcc: 3271, vAcc: 3560
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218352300, lon: 302693881, lat: 599397636, height: 28215, hMSL: 12286, hAcc: 3308, vAcc: 3593
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218353000, lon: 302693861, lat: 599397651, height: 28347, hMSL: 12417, hAcc: 3336, vAcc: 3619
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218353700, lon: 302693784, lat: 599397672, height: 28399, hMSL: 12469, hAcc: 3373, vAcc: 3645
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218354400, lon: 302693595, lat: 599397639, height: 28568, hMSL: 12639, hAcc: 3404, vAcc: 3671
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218355300, lon: 302693515, lat: 599397664, height: 28873, hMSL: 12943, hAcc: 3449, vAcc: 3703
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218356000, lon: 302693494, lat: 599397689, height: 29283, hMSL: 13353, hAcc: 3475, vAcc: 3727
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218356700, lon: 302693381, lat: 599397680, height: 29623, hMSL: 13693, hAcc: 3506, vAcc: 3753
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218357400, lon: 302693292, lat: 599397661, height: 29916, hMSL: 13986, hAcc: 3532, vAcc: 3778
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218358300, lon: 302693270, lat: 599397670, height: 30199, hMSL: 14269, hAcc: 3572, vAcc: 3813
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218359000, lon: 302693235, lat: 599397704, height: 30456, hMSL: 14526, hAcc: 3599, vAcc: 3838
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218359700, lon: 302693276, lat: 599397733, height: 30757, hMSL: 14827, hAcc: 3633, vAcc: 3865
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218360400, lon: 302693209, lat: 599397729, height: 31038, hMSL: 15108, hAcc: 3657, vAcc: 3891
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218361300, lon: 302693096, lat: 599397783, height: 31636, hMSL: 15706, hAcc: 3702, vAcc: 3922
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218362000, lon: 302693056, lat: 599397824, height: 31977, hMSL: 16047, hAcc: 3719, vAcc: 3943
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218362700, lon: 302692970, lat: 599397803, height: 32281, hMSL: 16351, hAcc: 3750, vAcc: 3963
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218363400, lon: 302692904, lat: 599397768, height: 32627, hMSL: 16697, hAcc: 3750, vAcc: 3984
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218364300, lon: 302692820, lat: 599397751, height: 32705, hMSL: 16775, hAcc: 3772, vAcc: 4011
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218365000, lon: 302692767, lat: 599397846, height: 32839, hMSL: 16909, hAcc: 3781, vAcc: 4032
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218365700, lon: 302692742, lat: 599397834, height: 33086, hMSL: 17156, hAcc: 3808, vAcc: 4054
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218366400, lon: 302692769, lat: 599397794, height: 33287, hMSL: 17357, hAcc: 3824, vAcc: 4075
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218367300, lon: 302692776, lat: 599397807, height: 33355, hMSL: 17425, hAcc: 3835, vAcc: 4103
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218368000, lon: 302692676, lat: 599397778, height: 33428, hMSL: 17498, hAcc: 3838, vAcc: 4124
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218368700, lon: 302692706, lat: 599397762, height: 33542, hMSL: 17612, hAcc: 3857, vAcc: 4146
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218369400, lon: 302692753, lat: 599397816, height: 33621, hMSL: 17691, hAcc: 3882, vAcc: 4166
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218370300, lon: 302692804, lat: 599397802, height: 33535, hMSL: 17605, hAcc: 3930, vAcc: 4191
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218371000, lon: 302692850, lat: 599397757, height: 33359, hMSL: 17429, hAcc: 3968, vAcc: 4212
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218371700, lon: 302692705, lat: 599397735, height: 33283, hMSL: 17353, hAcc: 3975, vAcc: 4231
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218372400, lon: 302692786, lat: 599397666, height: 32879, hMSL: 16950, hAcc: 3978, vAcc: 4249
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218373300, lon: 302692762, lat: 599397584, height: 32404, hMSL: 16474, hAcc: 4001, vAcc: 4270
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218374000, lon: 302692638, lat: 599397557, height: 31938, hMSL: 16008, hAcc: 4022, vAcc: 4289
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218374700, lon: 302692624, lat: 599397572, height: 31626, hMSL: 15697, hAcc: 4028, vAcc: 4307
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218375400, lon: 302692624, lat: 599397528, height: 31241, hMSL: 15311, hAcc: 4060, vAcc: 4324
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218376300, lon: 302692841, lat: 599397568, height: 30531, hMSL: 14601, hAcc: 4065, vAcc: 4345
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218377000, lon: 302692957, lat: 599397595, height: 30317, hMSL: 14388, hAcc: 4075, vAcc: 4361
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218377700, lon: 302693043, lat: 599397604, height: 30268, hMSL: 14338, hAcc: 4113, vAcc: 4381
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218378600, lon: 302692979, lat: 599397531, height: 30159, hMSL: 14229, hAcc: 4143, vAcc: 4408
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218379700, lon: 302692868, lat: 599397462, height: 30206, hMSL: 14276, hAcc: 4206, vAcc: 4439
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218380600, lon: 302692705, lat: 599397374, height: 30139, hMSL: 14209, hAcc: 4277, vAcc: 4467
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218381500, lon: 302692577, lat: 599397303, height: 30194, hMSL: 14264, hAcc: 4363, vAcc: 4499
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218382000, lon: 302692624, lat: 599397273, height: 30277, hMSL: 14348, hAcc: 4412, vAcc: 4515
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218382700, lon: 302692593, lat: 599397257, height: 30588, hMSL: 14658, hAcc: 4472, vAcc: 4539
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218383400, lon: 302692527, lat: 599397185, height: 30801, hMSL: 14871, hAcc: 4540, vAcc: 4565
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218384300, lon: 302692446, lat: 599397067, height: 31027, hMSL: 15097, hAcc: 4619, vAcc: 4598
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218385000, lon: 302692343, lat: 599397042, height: 31155, hMSL: 15225, hAcc: 4658, vAcc: 4622
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218385700, lon: 302692268, lat: 599397020, height: 31360, hMSL: 15430, hAcc: 4708, vAcc: 4645
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218386400, lon: 302692317, lat: 599397010, height: 31562, hMSL: 15632, hAcc: 4749, vAcc: 4663
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218387300, lon: 302692331, lat: 599396994, height: 31933, hMSL: 16003, hAcc: 4790, vAcc: 4679
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218388000, lon: 302692419, lat: 599397024, height: 32419, hMSL: 16489, hAcc: 4816, vAcc: 4689
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218388700, lon: 302692449, lat: 599397059, height: 33049, hMSL: 17119, hAcc: 4850, vAcc: 4698
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218389400, lon: 302692539, lat: 599397093, height: 33660, hMSL: 17730, hAcc: 4879, vAcc: 4707
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218390300, lon: 302692829, lat: 599397223, height: 34499, hMSL: 18569, hAcc: 4917, vAcc: 4718
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218391000, lon: 302693034, lat: 599397279, height: 34972, hMSL: 19042, hAcc: 4933, vAcc: 4728
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218391700, lon: 302693181, lat: 599397347, height: 35558, hMSL: 19629, hAcc: 4946, vAcc: 4739
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218392400, lon: 302693285, lat: 599397359, height: 36017, hMSL: 20087, hAcc: 4968, vAcc: 4754
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218393300, lon: 302693320, lat: 599397391, height: 36437, hMSL: 20507, hAcc: 4989, vAcc: 4774
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218394000, lon: 302693450, lat: 599397430, height: 36936, hMSL: 21006, hAcc: 5030, vAcc: 4785
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218394700, lon: 302693465, lat: 599397448, height: 37420, hMSL: 21490, hAcc: 5048, vAcc: 4791
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218395400, lon: 302693395, lat: 599397510, height: 38086, hMSL: 22156, hAcc: 5054, vAcc: 4795
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218397000, lon: 302693527, lat: 599397517, height: 39459, hMSL: 23529, hAcc: 5067, vAcc: 4817
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218397700, lon: 302693568, lat: 599397558, height: 40081, hMSL: 24151, hAcc: 5077, vAcc: 4830
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218398400, lon: 302693499, lat: 599397492, height: 40628, hMSL: 24698, hAcc: 5089, vAcc: 4844
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218399300, lon: 302693474, lat: 599397426, height: 41305, hMSL: 25375, hAcc: 5101, vAcc: 4862
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218400000, lon: 302693541, lat: 599397420, height: 41728, hMSL: 25798, hAcc: 5114, vAcc: 4876
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218400700, lon: 302693567, lat: 599397400, height: 42097, hMSL: 26167, hAcc: 5123, vAcc: 4890
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218401400, lon: 302693616, lat: 599397475, height: 42490, hMSL: 26560, hAcc: 5129, vAcc: 4904
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218402300, lon: 302693592, lat: 599397476, height: 43068, hMSL: 27139, hAcc: 5131, vAcc: 4922
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218403000, lon: 302693593, lat: 599397458, height: 43587, hMSL: 27658, hAcc: 5136, vAcc: 4936
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218403700, lon: 302693626, lat: 599397445, height: 44062, hMSL: 28133, hAcc: 5147, vAcc: 4949
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218404400, lon: 302693603, lat: 599397375, height: 44525, hMSL: 28595, hAcc: 5154, vAcc: 4957
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218406000, lon: 302693567, lat: 599397346, height: 45375, hMSL: 29445, hAcc: 5160, vAcc: 4971
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218406700, lon: 302693619, lat: 599397366, height: 46037, hMSL: 30107, hAcc: 5158, vAcc: 4977
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218407400, lon: 302693562, lat: 599397327, height: 46691, hMSL: 30761, hAcc: 5166, vAcc: 4984
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218408300, lon: 302693593, lat: 599397247, height: 47182, hMSL: 31252, hAcc: 5167, vAcc: 4993
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218409000, lon: 302693617, lat: 599397207, height: 47705, hMSL: 31775, hAcc: 5164, vAcc: 4998
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218409700, lon: 302693721, lat: 599397236, height: 48394, hMSL: 32464, hAcc: 5161, vAcc: 5002
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218410400, lon: 302693787, lat: 599397174, height: 48927, hMSL: 32997, hAcc: 5160, vAcc: 5008
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218411300, lon: 302693806, lat: 599397271, height: 49837, hMSL: 33907, hAcc: 5156, vAcc: 5015
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218412000, lon: 302693874, lat: 599397329, height: 50542, hMSL: 34612, hAcc: 5001, vAcc: 5012
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218412700, lon: 302693977, lat: 599397353, height: 51365, hMSL: 35435, hAcc: 4899, vAcc: 5011
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218413400, lon: 302694001, lat: 599397414, height: 52402, hMSL: 36473, hAcc: 4839, vAcc: 5012
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218414300, lon: 302694113, lat: 599397444, height: 53460, hMSL: 37531, hAcc: 4770, vAcc: 5014
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218415000, lon: 302694188, lat: 599397466, height: 54274, hMSL: 38345, hAcc: 4723, vAcc: 5013
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218415700, lon: 302694256, lat: 599397489, height: 55059, hMSL: 39129, hAcc: 4677, vAcc: 5014
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218416400, lon: 302694348, lat: 599397503, height: 56053, hMSL: 40123, hAcc: 4633, vAcc: 5015
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218417300, lon: 302694468, lat: 599397511, height: 56728, hMSL: 40798, hAcc: 4580, vAcc: 5016
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218418000, lon: 302694484, lat: 599397568, height: 57549, hMSL: 41619, hAcc: 4542, vAcc: 5017
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218418700, lon: 302694560, lat: 599397592, height: 58439, hMSL: 42509, hAcc: 4510, vAcc: 5018
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218419400, lon: 302694640, lat: 599397606, height: 59270, hMSL: 43340, hAcc: 4479, vAcc: 5019
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218420300, lon: 302694739, lat: 599397625, height: 60217, hMSL: 44287, hAcc: 4433, vAcc: 5017
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218421000, lon: 302694745, lat: 599397672, height: 61023, hMSL: 45093, hAcc: 4401, vAcc: 5016
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218421700, lon: 302694790, lat: 599397698, height: 61616, hMSL: 45686, hAcc: 4369, vAcc: 5014
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218422400, lon: 302694811, lat: 599397744, height: 62530, hMSL: 46601, hAcc: 4338, vAcc: 5014
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218423100, lon: 302694796, lat: 599397781, height: 63399, hMSL: 47469, hAcc: 4311, vAcc: 5012
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218424000, lon: 302694853, lat: 599397810, height: 64553, hMSL: 48623, hAcc: 4276, vAcc: 5010
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218424700, lon: 302694891, lat: 599397817, height: 65215, hMSL: 49286, hAcc: 4246, vAcc: 5008
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218425400, lon: 302694973, lat: 599397823, height: 66032, hMSL: 50102, hAcc: 4226, vAcc: 5008
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218426300, lon: 302695002, lat: 599397845, height: 66515, hMSL: 50586, hAcc: 4192, vAcc: 5005
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218427000, lon: 302694985, lat: 599397895, height: 67283, hMSL: 51354, hAcc: 4168, vAcc: 5004
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218427700, lon: 302695024, lat: 599397905, height: 67635, hMSL: 51706, hAcc: 4146, vAcc: 5002
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218428400, lon: 302695056, lat: 599397915, height: 68045, hMSL: 52115, hAcc: 4129, vAcc: 5000
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218429300, lon: 302695096, lat: 599397924, height: 68384, hMSL: 52454, hAcc: 4108, vAcc: 4997
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218430000, lon: 302695126, lat: 599397948, height: 69229, hMSL: 53299, hAcc: 4086, vAcc: 4993
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218430700, lon: 302695162, lat: 599397971, height: 70192, hMSL: 54262, hAcc: 4071, vAcc: 4990
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218431400, lon: 302695193, lat: 599397992, height: 70929, hMSL: 55000, hAcc: 4052, vAcc: 4987
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218433000, lon: 302695158, lat: 599398084, height: 72259, hMSL: 56329, hAcc: 4003, vAcc: 4980
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218433700, lon: 302695190, lat: 599398088, height: 72817, hMSL: 56887, hAcc: 3987, vAcc: 4977
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218434400, lon: 302695235, lat: 599398092, height: 73013, hMSL: 57084, hAcc: 3970, vAcc: 4973
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218435100, lon: 302695208, lat: 599398134, height: 73047, hMSL: 57117, hAcc: 3954, vAcc: 4969
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218436000, lon: 302695232, lat: 599398165, height: 73489, hMSL: 57559, hAcc: 3932, vAcc: 4963
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218436700, lon: 302695251, lat: 599398175, height: 73761, hMSL: 57832, hAcc: 3913, vAcc: 4959
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218437400, lon: 302695276, lat: 599398199, height: 74474, hMSL: 58545, hAcc: 3900, vAcc: 4955
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218438300, lon: 302695306, lat: 599398209, height: 74881, hMSL: 58952, hAcc: 3881, vAcc: 4949
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218439000, lon: 302695467, lat: 599398229, height: 75562, hMSL: 59632, hAcc: 3868, vAcc: 4944
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218439700, lon: 302695535, lat: 599398217, height: 75968, hMSL: 60039, hAcc: 3855, vAcc: 4936
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218440400, lon: 302695606, lat: 599398223, height: 76201, hMSL: 60272, hAcc: 3841, vAcc: 4929
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218441300, lon: 302695665, lat: 599398192, height: 76667, hMSL: 60737, hAcc: 3828, vAcc: 4923
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218442000, lon: 302695699, lat: 599398201, height: 76861, hMSL: 60932, hAcc: 3813, vAcc: 4918
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218442700, lon: 302695681, lat: 599398223, height: 76974, hMSL: 61045, hAcc: 3812, vAcc: 4913
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218443900, lon: 302695664, lat: 599398259, height: 77072, hMSL: 61142, hAcc: 3846, vAcc: 4906
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218445000, lon: 302695727, lat: 599398233, height: 77199, hMSL: 61269, hAcc: 3903, vAcc: 4900
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218445700, lon: 302695844, lat: 599398283, height: 76990, hMSL: 61060, hAcc: 3951, vAcc: 4897
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218446400, lon: 302695912, lat: 599398283, height: 77094, hMSL: 61165, hAcc: 4003, vAcc: 4891
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218448000, lon: 302696186, lat: 599398308, height: 77292, hMSL: 61362, hAcc: 4152, vAcc: 4873
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218448700, lon: 302696329, lat: 599398385, height: 77299, hMSL: 61370, hAcc: 4212, vAcc: 4865
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218449400, lon: 302696361, lat: 599398421, height: 77256, hMSL: 61326, hAcc: 4263, vAcc: 4858
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218450300, lon: 302696335, lat: 599398424, height: 77375, hMSL: 61445, hAcc: 4358, vAcc: 4852
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218451000, lon: 302696339, lat: 599398421, height: 77243, hMSL: 61314, hAcc: 4410, vAcc: 4848
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218451700, lon: 302696300, lat: 599398392, height: 77024, hMSL: 61095, hAcc: 4462, vAcc: 4845
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218452400, lon: 302696262, lat: 599398341, height: 77203, hMSL: 61274, hAcc: 4539, vAcc: 4842
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218453300, lon: 302696438, lat: 599398271, height: 77184, hMSL: 61254, hAcc: 4612, vAcc: 4839
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218454000, lon: 302696387, lat: 599398296, height: 77265, hMSL: 61335, hAcc: 4672, vAcc: 4833
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218454700, lon: 302696674, lat: 599398305, height: 76740, hMSL: 60811, hAcc: 4706, vAcc: 4827
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218455400, lon: 302696670, lat: 599398232, height: 76569, hMSL: 60639, hAcc: 4756, vAcc: 4823
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218456100, lon: 302696779, lat: 599398211, height: 76355, hMSL: 60425, hAcc: 4808, vAcc: 4818
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218457000, lon: 302696853, lat: 599398316, height: 75995, hMSL: 60065, hAcc: 4860, vAcc: 4811
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218457700, lon: 302696995, lat: 599398279, height: 75927, hMSL: 59997, hAcc: 4881, vAcc: 4806
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218458400, lon: 302697102, lat: 599398402, height: 75864, hMSL: 59934, hAcc: 4916, vAcc: 4803
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218459300, lon: 302697226, lat: 599398453, height: 75803, hMSL: 59874, hAcc: 4951, vAcc: 4799
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218460000, lon: 302697325, lat: 599398472, height: 75640, hMSL: 59710, hAcc: 4990, vAcc: 4796
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218460700, lon: 302697469, lat: 599398439, height: 75559, hMSL: 59630, hAcc: 5027, vAcc: 4792
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218461400, lon: 302697495, lat: 599398438, height: 75422, hMSL: 59493, hAcc: 5055, vAcc: 4789
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218463000, lon: 302697768, lat: 599398528, height: 75376, hMSL: 59446, hAcc: 5117, vAcc: 4783
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218463700, lon: 302697709, lat: 599398484, height: 75316, hMSL: 59387, hAcc: 5151, vAcc: 4781
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218464400, lon: 302697670, lat: 599398479, height: 75206, hMSL: 59276, hAcc: 5199, vAcc: 4781
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218465300, lon: 302697820, lat: 599398508, height: 74863, hMSL: 58934, hAcc: 5222, vAcc: 4778
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218466000, lon: 302697999, lat: 599398523, height: 74922, hMSL: 58993, hAcc: 5225, vAcc: 4776
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218466700, lon: 302698206, lat: 599398491, height: 74941, hMSL: 59012, hAcc: 5253, vAcc: 4774
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218467400, lon: 302698396, lat: 599398478, height: 75158, hMSL: 59229, hAcc: 5294, vAcc: 4774
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218468300, lon: 302698619, lat: 599398550, height: 75483, hMSL: 59554, hAcc: 5357, vAcc: 4773
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218469000, lon: 302698560, lat: 599398295, height: 70062, hMSL: 54133, hAcc: 5240, vAcc: 4014
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218469700, lon: 302698685, lat: 599398337, height: 70076, hMSL: 54147, hAcc: 5249, vAcc: 4006
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218470400, lon: 302698721, lat: 599398394, height: 70082, hMSL: 54153, hAcc: 5277, vAcc: 3999
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218472000, lon: 302699022, lat: 599398325, height: 70081, hMSL: 54152, hAcc: 5339, vAcc: 3983
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218472700, lon: 302698948, lat: 599398141, height: 68721, hMSL: 52791, hAcc: 5371, vAcc: 3765
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218473400, lon: 302698930, lat: 599398061, height: 68412, hMSL: 52482, hAcc: 5464, vAcc: 3709
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218474300, lon: 302699092, lat: 599397907, height: 68342, hMSL: 52412, hAcc: 5613, vAcc: 3690
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218475000, lon: 302699222, lat: 599397826, height: 68284, hMSL: 52354, hAcc: 5716, vAcc: 3678
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218475700, lon: 302699268, lat: 599397735, height: 68218, hMSL: 52288, hAcc: 5831, vAcc: 3666
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218476400, lon: 302699430, lat: 599397684, height: 68172, hMSL: 52242, hAcc: 5965, vAcc: 3654
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218477300, lon: 302699749, lat: 599397590, height: 68054, hMSL: 52125, hAcc: 6135, vAcc: 3641
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218478000, lon: 302699858, lat: 599397551, height: 67938, hMSL: 52008, hAcc: 6252, vAcc: 3630
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218478700, lon: 302699946, lat: 599397569, height: 67796, hMSL: 51867, hAcc: 6372, vAcc: 3621
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218479400, lon: 302699960, lat: 599397616, height: 67588, hMSL: 51658, hAcc: 6467, vAcc: 3602
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218480300, lon: 302700015, lat: 599397595, height: 67379, hMSL: 51450, hAcc: 6631, vAcc: 3577
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218481000, lon: 302699955, lat: 599397522, height: 67256, hMSL: 51326, hAcc: 6735, vAcc: 3563
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218481700, lon: 302700100, lat: 599397499, height: 67179, hMSL: 51249, hAcc: 6842, vAcc: 3550
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218482400, lon: 302700070, lat: 599397444, height: 67042, hMSL: 51113, hAcc: 6953, vAcc: 3538
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218483300, lon: 302700029, lat: 599397445, height: 66893, hMSL: 50964, hAcc: 7073, vAcc: 3524
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218484000, lon: 302699979, lat: 599397405, height: 66808, hMSL: 50878, hAcc: 7146, vAcc: 3513
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218484700, lon: 302699977, lat: 599397185, height: 66777, hMSL: 50847, hAcc: 7221, vAcc: 3503
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218485400, lon: 302700019, lat: 599397209, height: 66694, hMSL: 50764, hAcc: 7318, vAcc: 3493
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218486300, lon: 302699946, lat: 599397148, height: 66611, hMSL: 50681, hAcc: 7429, vAcc: 3481
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218487000, lon: 302699741, lat: 599397135, height: 66542, hMSL: 50612, hAcc: 7504, vAcc: 3471
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218487700, lon: 302699721, lat: 599397264, height: 66473, hMSL: 50544, hAcc: 7578, vAcc: 3462
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218488400, lon: 302699657, lat: 599397341, height: 66444, hMSL: 50515, hAcc: 7673, vAcc: 3453
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218489300, lon: 302699534, lat: 599397405, height: 66380, hMSL: 50450, hAcc: 7707, vAcc: 5543
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218490000, lon: 302699426, lat: 599397383, height: 66453, hMSL: 50524, hAcc: 7746, vAcc: 5541
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218490700, lon: 302699530, lat: 599397453, height: 66483, hMSL: 50553, hAcc: 7803, vAcc: 5542
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218491400, lon: 302699652, lat: 599397497, height: 66505, hMSL: 50576, hAcc: 7881, vAcc: 5541
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218492300, lon: 302699677, lat: 599397511, height: 66474, hMSL: 50544, hAcc: 7951, vAcc: 5540
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218493000, lon: 302699778, lat: 599397476, height: 66448, hMSL: 50519, hAcc: 8021, vAcc: 5540
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218493700, lon: 302699819, lat: 599397505, height: 66500, hMSL: 50570, hAcc: 8072, vAcc: 5541
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218494600, lon: 302699994, lat: 599397420, height: 66510, hMSL: 50580, hAcc: 8155, vAcc: 5541
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218495300, lon: 302700005, lat: 599397516, height: 66564, hMSL: 50634, hAcc: 8222, vAcc: 5541
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218496000, lon: 302699836, lat: 599397612, height: 66509, hMSL: 50579, hAcc: 8261, vAcc: 5541
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218496700, lon: 302699709, lat: 599397703, height: 66500, hMSL: 50570, hAcc: 8330, vAcc: 5541
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218497400, lon: 302699667, lat: 599397653, height: 66495, hMSL: 50566, hAcc: 8384, vAcc: 5540
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218498300, lon: 302699623, lat: 599397588, height: 66536, hMSL: 50607, hAcc: 8464, vAcc: 5540
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218499000, lon: 302699615, lat: 599397620, height: 66561, hMSL: 50632, hAcc: 8501, vAcc: 5540
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218499700, lon: 302699678, lat: 599397626, height: 66515, hMSL: 50585, hAcc: 8520, vAcc: 5540
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218500400, lon: 302699629, lat: 599397712, height: 66503, hMSL: 50574, hAcc: 8565, vAcc: 5542
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218501300, lon: 302699692, lat: 599397758, height: 66493, hMSL: 50564, hAcc: 8607, vAcc: 5542
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218502000, lon: 302699605, lat: 599397871, height: 66518, hMSL: 50589, hAcc: 8640, vAcc: 5542
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218502700, lon: 302699603, lat: 599397859, height: 66521, hMSL: 50592, hAcc: 8675, vAcc: 5543
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218503400, lon: 302699557, lat: 599397961, height: 66542, hMSL: 50612, hAcc: 8717, vAcc: 5540
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218504300, lon: 302699463, lat: 599397993, height: 66653, hMSL: 50724, hAcc: 8738, vAcc: 5543
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218505000, lon: 302699575, lat: 599398094, height: 66653, hMSL: 50724, hAcc: 8762, vAcc: 5542
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218505700, lon: 302699562, lat: 599398159, height: 66561, hMSL: 50632, hAcc: 8785, vAcc: 5540
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218506400, lon: 302699685, lat: 599398129, height: 66558, hMSL: 50628, hAcc: 8812, vAcc: 5541
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218507300, lon: 302699675, lat: 599398192, height: 66682, hMSL: 50752, hAcc: 8825, vAcc: 5541
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218508000, lon: 302699558, lat: 599398185, height: 66649, hMSL: 50720, hAcc: 8679, vAcc: 5543
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218508700, lon: 302699415, lat: 599398291, height: 66616, hMSL: 50686, hAcc: 8621, vAcc: 5543
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218509400, lon: 302699392, lat: 599398285, height: 66596, hMSL: 50667, hAcc: 8600, vAcc: 5542
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218511000, lon: 302699322, lat: 599398288, height: 66571, hMSL: 50642, hAcc: 8537, vAcc: 5541
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218511700, lon: 302699282, lat: 599398342, height: 66565, hMSL: 50636, hAcc: 8503, vAcc: 5543
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218512400, lon: 302699251, lat: 599398349, height: 66557, hMSL: 50628, hAcc: 8486, vAcc: 5543
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218513300, lon: 302699189, lat: 599398434, height: 66490, hMSL: 50561, hAcc: 8445, vAcc: 5542
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218514000, lon: 302699145, lat: 599398443, height: 66409, hMSL: 50479, hAcc: 8416, vAcc: 5543
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218514700, lon: 302699159, lat: 599398573, height: 66360, hMSL: 50431, hAcc: 8397, vAcc: 5542
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218515400, lon: 302699130, lat: 599398665, height: 66386, hMSL: 50456, hAcc: 8384, vAcc: 5543
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218517000, lon: 302699071, lat: 599398782, height: 66363, hMSL: 50434, hAcc: 8359, vAcc: 5540
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218517700, lon: 302699063, lat: 599398840, height: 66359, hMSL: 50430, hAcc: 8326, vAcc: 5541
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218518400, lon: 302699041, lat: 599398862, height: 66434, hMSL: 50505, hAcc: 8315, vAcc: 5540
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218519300, lon: 302699034, lat: 599398923, height: 66333, hMSL: 50403, hAcc: 8304, vAcc: 5537
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218520000, lon: 302699050, lat: 599399081, height: 66435, hMSL: 50506, hAcc: 8296, vAcc: 5538
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218520700, lon: 302699022, lat: 599399067, height: 66506, hMSL: 50577, hAcc: 8263, vAcc: 5536
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218521400, lon: 302698988, lat: 599399094, height: 66500, hMSL: 50571, hAcc: 8238, vAcc: 5539
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218522300, lon: 302698874, lat: 599399284, height: 67234, hMSL: 51304, hAcc: 7945, vAcc: 4932
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218523000, lon: 302698604, lat: 599399824, height: 68517, hMSL: 52587, hAcc: 7111, vAcc: 3818
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218523700, lon: 302698456, lat: 599400063, height: 68900, hMSL: 52971, hAcc: 6537, vAcc: 3260
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218524400, lon: 302698337, lat: 599400216, height: 69015, hMSL: 53086, hAcc: 6073, vAcc: 2921
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218525300, lon: 302698188, lat: 599400337, height: 69077, hMSL: 53147, hAcc: 5699, vAcc: 2635
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218526000, lon: 302698182, lat: 599400513, height: 69288, hMSL: 53359, hAcc: 5468, vAcc: 2478
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218526700, lon: 302698112, lat: 599400575, height: 69357, hMSL: 53428, hAcc: 5298, vAcc: 2357
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218527400, lon: 302698097, lat: 599400648, height: 69380, hMSL: 53451, hAcc: 5141, vAcc: 2261
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218529000, lon: 302698050, lat: 599400792, height: 69251, hMSL: 53322, hAcc: 4880, vAcc: 2101
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218529700, lon: 302698022, lat: 599400810, height: 69148, hMSL: 53219, hAcc: 4812, vAcc: 2050
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218530400, lon: 302698001, lat: 599400803, height: 69030, hMSL: 53101, hAcc: 4739, vAcc: 2007
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218531300, lon: 302697942, lat: 599400712, height: 68916, hMSL: 52986, hAcc: 4644, vAcc: 1959
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218532000, lon: 302697984, lat: 599400769, height: 68956, hMSL: 53027, hAcc: 4598, vAcc: 1928
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218532700, lon: 302697939, lat: 599400752, height: 68969, hMSL: 53040, hAcc: 4577, vAcc: 1903
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218533400, lon: 302697926, lat: 599400762, height: 68989, hMSL: 53060, hAcc: 4569, vAcc: 1881
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218535000, lon: 302697881, lat: 599400668, height: 68937, hMSL: 53007, hAcc: 4542, vAcc: 1843
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218535700, lon: 302697926, lat: 599400828, height: 68937, hMSL: 53008, hAcc: 4518, vAcc: 1832
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218536400, lon: 302697905, lat: 599400823, height: 68893, hMSL: 52964, hAcc: 4508, vAcc: 1823
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218537300, lon: 302697873, lat: 599400871, height: 68809, hMSL: 52880, hAcc: 4501, vAcc: 1815
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218538000, lon: 302698018, lat: 599400943, height: 68768, hMSL: 52838, hAcc: 4520, vAcc: 1812
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218538700, lon: 302698008, lat: 599400979, height: 68704, hMSL: 52774, hAcc: 4533, vAcc: 1811
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218539400, lon: 302697970, lat: 599400927, height: 68616, hMSL: 52686, hAcc: 4554, vAcc: 1811
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218540300, lon: 302697954, lat: 599400979, height: 68504, hMSL: 52575, hAcc: 4533, vAcc: 1813
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218541000, lon: 302697947, lat: 599400974, height: 68432, hMSL: 52503, hAcc: 4501, vAcc: 1817
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218541700, lon: 302698004, lat: 599401014, height: 68338, hMSL: 52408, hAcc: 4506, vAcc: 1822
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218542400, lon: 302697992, lat: 599400938, height: 68286, hMSL: 52357, hAcc: 4489, vAcc: 1829
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218543300, lon: 302697942, lat: 599400849, height: 68169, hMSL: 52239, hAcc: 4499, vAcc: 1839
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218544000, lon: 302697975, lat: 599400873, height: 68174, hMSL: 52244, hAcc: 4551, vAcc: 1848
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218544700, lon: 302697975, lat: 599400843, height: 68104, hMSL: 52175, hAcc: 4584, vAcc: 1859
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218545400, lon: 302697966, lat: 599400782, height: 68047, hMSL: 52118, hAcc: 4594, vAcc: 1870
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218546300, lon: 302697690, lat: 599400661, height: 67947, hMSL: 52018, hAcc: 4560, vAcc: 1886
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218547000, lon: 302697660, lat: 599400535, height: 67891, hMSL: 51962, hAcc: 4518, vAcc: 1900
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218547700, lon: 302697592, lat: 599400513, height: 67782, hMSL: 51852, hAcc: 4513, vAcc: 1914
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218548400, lon: 302697581, lat: 599400472, height: 67741, hMSL: 51812, hAcc: 4519, vAcc: 1930
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218549300, lon: 302697532, lat: 599400432, height: 67632, hMSL: 51703, hAcc: 4548, vAcc: 1951
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218550000, lon: 302697517, lat: 599400425, height: 67492, hMSL: 51562, hAcc: 4594, vAcc: 1969
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218550700, lon: 302697588, lat: 599400406, height: 67413, hMSL: 51484, hAcc: 4633, vAcc: 1987
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218551400, lon: 302697598, lat: 599400328, height: 67308, hMSL: 51379, hAcc: 4698, vAcc: 2006
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218552300, lon: 302697473, lat: 599400246, height: 67142, hMSL: 51212, hAcc: 4748, vAcc: 2032
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218553000, lon: 302697469, lat: 599400255, height: 67110, hMSL: 51180, hAcc: 4755, vAcc: 2053
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218553700, lon: 302697499, lat: 599400202, height: 67029, hMSL: 51100, hAcc: 4796, vAcc: 2075
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218554400, lon: 302697526, lat: 599400269, height: 66894, hMSL: 50964, hAcc: 4833, vAcc: 2097
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218555300, lon: 302697510, lat: 599400285, height: 66680, hMSL: 50751, hAcc: 4900, vAcc: 2127
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218556000, lon: 302697333, lat: 599400178, height: 66442, hMSL: 50513, hAcc: 4929, vAcc: 2151
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218556700, lon: 302697380, lat: 599400127, height: 66191, hMSL: 50261, hAcc: 4954, vAcc: 2175
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218557400, lon: 302697254, lat: 599400097, height: 65984, hMSL: 50054, hAcc: 4980, vAcc: 2200
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218558300, lon: 302697215, lat: 599400012, height: 65686, hMSL: 49757, hAcc: 4998, vAcc: 2233
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218559000, lon: 302697061, lat: 599399910, height: 65462, hMSL: 49532, hAcc: 5026, vAcc: 2260
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218559700, lon: 302696961, lat: 599399864, height: 65308, hMSL: 49379, hAcc: 5070, vAcc: 2287
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218560400, lon: 302696793, lat: 599399780, height: 65113, hMSL: 49184, hAcc: 5082, vAcc: 2314
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218561300, lon: 302696648, lat: 599399598, height: 64868, hMSL: 48939, hAcc: 5087, vAcc: 2349
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218562000, lon: 302696616, lat: 599399482, height: 64618, hMSL: 48688, hAcc: 5110, vAcc: 2377
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218562700, lon: 302696582, lat: 599399422, height: 64473, hMSL: 48544, hAcc: 5144, vAcc: 2406
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218563400, lon: 302696518, lat: 599399318, height: 64264, hMSL: 48335, hAcc: 5194, vAcc: 2435
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218564300, lon: 302696447, lat: 599399325, height: 64008, hMSL: 48078, hAcc: 5145, vAcc: 2472
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218565000, lon: 302696431, lat: 599399295, height: 63554, hMSL: 47625, hAcc: 5114, vAcc: 2501
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218565700, lon: 302696299, lat: 599399253, height: 63241, hMSL: 47311, hAcc: 5103, vAcc: 2531
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218566400, lon: 302696329, lat: 599399302, height: 62854, hMSL: 46925, hAcc: 5077, vAcc: 2561
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218568000, lon: 302696326, lat: 599399304, height: 62068, hMSL: 46138, hAcc: 5064, vAcc: 2630
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218568700, lon: 302696412, lat: 599399283, height: 61642, hMSL: 45712, hAcc: 5075, vAcc: 2660
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218569400, lon: 302696413, lat: 599399225, height: 61410, hMSL: 45480, hAcc: 5053, vAcc: 2690
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218570300, lon: 302696556, lat: 599399225, height: 60964, hMSL: 45034, hAcc: 5035, vAcc: 2730
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218571000, lon: 302696556, lat: 599399218, height: 60664, hMSL: 44735, hAcc: 5064, vAcc: 2762
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218571700, lon: 302696528, lat: 599399214, height: 60212, hMSL: 44283, hAcc: 5047, vAcc: 2793
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218572400, lon: 302696500, lat: 599399225, height: 59759, hMSL: 43829, hAcc: 5059, vAcc: 2824
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218573300, lon: 302696534, lat: 599399202, height: 59184, hMSL: 43255, hAcc: 5084, vAcc: 2865
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218574000, lon: 302696677, lat: 599399302, height: 58764, hMSL: 42835, hAcc: 5103, vAcc: 2896
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218574700, lon: 302696746, lat: 599399303, height: 58374, hMSL: 42444, hAcc: 5105, vAcc: 2927
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218575400, lon: 302696804, lat: 599399327, height: 57998, hMSL: 42068, hAcc: 5124, vAcc: 2958
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218577000, lon: 302697340, lat: 599399534, height: 57241, hMSL: 41311, hAcc: 5112, vAcc: 3030
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218577700, lon: 302697344, lat: 599399512, height: 56897, hMSL: 40968, hAcc: 5093, vAcc: 3060
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218578400, lon: 302697621, lat: 599399595, height: 56446, hMSL: 40517, hAcc: 5121, vAcc: 3092
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218579300, lon: 302697650, lat: 599399603, height: 55855, hMSL: 39925, hAcc: 5098, vAcc: 3132
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218580000, lon: 302697788, lat: 599399651, height: 55475, hMSL: 39546, hAcc: 5066, vAcc: 3162
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218580700, lon: 302697946, lat: 599399687, height: 55002, hMSL: 39072, hAcc: 5057, vAcc: 3193
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218581400, lon: 302697984, lat: 599399697, height: 54739, hMSL: 38810, hAcc: 5044, vAcc: 3223
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218583000, lon: 302698481, lat: 599399852, height: 53396, hMSL: 37466, hAcc: 5016, vAcc: 3291
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218583700, lon: 302698531, lat: 599399826, height: 52724, hMSL: 36795, hAcc: 5000, vAcc: 3320
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218584400, lon: 302698624, lat: 599399836, height: 52339, hMSL: 36409, hAcc: 5025, vAcc: 3349
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218585300, lon: 302698680, lat: 599399881, height: 51534, hMSL: 35605, hAcc: 5006, vAcc: 3385
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218586000, lon: 302698805, lat: 599399926, height: 50845, hMSL: 34916, hAcc: 4974, vAcc: 3412
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218586700, lon: 302699026, lat: 599400007, height: 50071, hMSL: 34142, hAcc: 4988, vAcc: 3439
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218587400, lon: 302699218, lat: 599400100, height: 49504, hMSL: 33575, hAcc: 5013, vAcc: 3467
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218588300, lon: 302699287, lat: 599400155, height: 48876, hMSL: 32947, hAcc: 5044, vAcc: 3502
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218589000, lon: 302699527, lat: 599400278, height: 48284, hMSL: 32355, hAcc: 5058, vAcc: 3529
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218589700, lon: 302699747, lat: 599400363, height: 47535, hMSL: 31606, hAcc: 5060, vAcc: 3555
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218590400, lon: 302699764, lat: 599400363, height: 47020, hMSL: 31091, hAcc: 5045, vAcc: 3580
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218591300, lon: 302699900, lat: 599400422, height: 46278, hMSL: 30349, hAcc: 5060, vAcc: 3611
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218592000, lon: 302700033, lat: 599400472, height: 45539, hMSL: 29609, hAcc: 5095, vAcc: 3637
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218592700, lon: 302700142, lat: 599400506, height: 45024, hMSL: 29095, hAcc: 5101, vAcc: 3662
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218593400, lon: 302700195, lat: 599400505, height: 44423, hMSL: 28494, hAcc: 5103, vAcc: 3689
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218594300, lon: 302700185, lat: 599400466, height: 43463, hMSL: 27534, hAcc: 5100, vAcc: 3719
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218595000, lon: 302700187, lat: 599400390, height: 42746, hMSL: 26817, hAcc: 5101, vAcc: 3743
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218595700, lon: 302700131, lat: 599400284, height: 41619, hMSL: 25690, hAcc: 5096, vAcc: 3765
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218596400, lon: 302700144, lat: 599400232, height: 40922, hMSL: 24992, hAcc: 5097, vAcc: 3786
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218597300, lon: 302700319, lat: 599400308, height: 40218, hMSL: 24289, hAcc: 5081, vAcc: 3816
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218598000, lon: 302700282, lat: 599400274, height: 39515, hMSL: 23585, hAcc: 5064, vAcc: 3836
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218598700, lon: 302700220, lat: 599400184, height: 38660, hMSL: 22731, hAcc: 5060, vAcc: 3856
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218599400, lon: 302700180, lat: 599400144, height: 38251, hMSL: 22322, hAcc: 5051, vAcc: 3876
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218600300, lon: 302700317, lat: 599400102, height: 37635, hMSL: 21706, hAcc: 5056, vAcc: 3902
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218601000, lon: 302700241, lat: 599399983, height: 36853, hMSL: 20923, hAcc: 5054, vAcc: 3920
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218601700, lon: 302700099, lat: 599399876, height: 36037, hMSL: 20108, hAcc: 5053, vAcc: 3939
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218602400, lon: 302700008, lat: 599399821, height: 35412, hMSL: 19483, hAcc: 5056, vAcc: 3957
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218603300, lon: 302700167, lat: 599399816, height: 34618, hMSL: 18689, hAcc: 5040, vAcc: 3977
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218604000, lon: 302700127, lat: 599399770, height: 33993, hMSL: 18063, hAcc: 5035, vAcc: 3992
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218604700, lon: 302700056, lat: 599399649, height: 33505, hMSL: 17576, hAcc: 5044, vAcc: 4008
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218605400, lon: 302700059, lat: 599399578, height: 32883, hMSL: 16954, hAcc: 5039, vAcc: 4024
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218606300, lon: 302700241, lat: 599399609, height: 31920, hMSL: 15991, hAcc: 5060, vAcc: 4043
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218607000, lon: 302700117, lat: 599399553, height: 31199, hMSL: 15270, hAcc: 5064, vAcc: 4059
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218607700, lon: 302700029, lat: 599399415, height: 30469, hMSL: 14540, hAcc: 5074, vAcc: 4072
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218608400, lon: 302700028, lat: 599399394, height: 30245, hMSL: 14315, hAcc: 5055, vAcc: 4086
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218609300, lon: 302700012, lat: 599399344, height: 29349, hMSL: 13420, hAcc: 5053, vAcc: 4103
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218610000, lon: 302699852, lat: 599399262, height: 28683, hMSL: 12754, hAcc: 5068, vAcc: 4117
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218610700, lon: 302699826, lat: 599399195, height: 28167, hMSL: 12238, hAcc: 5081, vAcc: 4131
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218611400, lon: 302699738, lat: 599399128, height: 27424, hMSL: 11494, hAcc: 5072, vAcc: 4143
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218612300, lon: 302699707, lat: 599399056, height: 26735, hMSL: 10806, hAcc: 5060, vAcc: 4158
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218613000, lon: 302699667, lat: 599398987, height: 26238, hMSL: 10309, hAcc: 5053, vAcc: 4170
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218613700, lon: 302699707, lat: 599398914, height: 25670, hMSL: 9741, hAcc: 5052, vAcc: 4181
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218614400, lon: 302699765, lat: 599398989, height: 25515, hMSL: 9585, hAcc: 5058, vAcc: 4192
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218616000, lon: 302699683, lat: 599398855, height: 24563, hMSL: 8634, hAcc: 5045, vAcc: 4214
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218616500, lon: 302699682, lat: 599398832, height: 24370, hMSL: 8441, hAcc: 5045, vAcc: 4221
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218617000, lon: 302699553, lat: 599398778, height: 24244, hMSL: 8315, hAcc: 5044, vAcc: 4228
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218617700, lon: 302699469, lat: 599398733, height: 24045, hMSL: 8116, hAcc: 5056, vAcc: 4238
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218618400, lon: 302699421, lat: 599398651, height: 23772, hMSL: 7843, hAcc: 5063, vAcc: 4250
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218619300, lon: 302699385, lat: 599398550, height: 23236, hMSL: 7307, hAcc: 5074, vAcc: 4263
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218620000, lon: 302699405, lat: 599398555, height: 22938, hMSL: 7008, hAcc: 5086, vAcc: 4272
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218620700, lon: 302699299, lat: 599398460, height: 22764, hMSL: 6834, hAcc: 5081, vAcc: 4280
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218621400, lon: 302699392, lat: 599398514, height: 22847, hMSL: 6917, hAcc: 5085, vAcc: 4286
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218622300, lon: 302699396, lat: 599398499, height: 22688, hMSL: 6759, hAcc: 5090, vAcc: 4295
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218623000, lon: 302699444, lat: 599398495, height: 22587, hMSL: 6657, hAcc: 5083, vAcc: 4301
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218623700, lon: 302699422, lat: 599398501, height: 23087, hMSL: 7158, hAcc: 5086, vAcc: 4309
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218624400, lon: 302699365, lat: 599398449, height: 23128, hMSL: 7199, hAcc: 5080, vAcc: 4316
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218625300, lon: 302699391, lat: 599398408, height: 23093, hMSL: 7164, hAcc: 5073, vAcc: 4327
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218626000, lon: 302699322, lat: 599398362, height: 23230, hMSL: 7300, hAcc: 5091, vAcc: 4336
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218626700, lon: 302699293, lat: 599398382, height: 23594, hMSL: 7665, hAcc: 5101, vAcc: 4345
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218627400, lon: 302699185, lat: 599398319, height: 23775, hMSL: 7846, hAcc: 5121, vAcc: 4354
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218628300, lon: 302699350, lat: 599398377, height: 23941, hMSL: 8012, hAcc: 5109, vAcc: 4363
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218629000, lon: 302699366, lat: 599398392, height: 24074, hMSL: 8145, hAcc: 5111, vAcc: 4371
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218629700, lon: 302699231, lat: 599398356, height: 24143, hMSL: 8214, hAcc: 5118, vAcc: 4379
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218630400, lon: 302699262, lat: 599398399, height: 24179, hMSL: 8250, hAcc: 5111, vAcc: 4388
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218631300, lon: 302699227, lat: 599398363, height: 24160, hMSL: 8231, hAcc: 5122, vAcc: 4398
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218632000, lon: 302699172, lat: 599398348, height: 24139, hMSL: 8209, hAcc: 5124, vAcc: 4407
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218632700, lon: 302699111, lat: 599398338, height: 24316, hMSL: 8387, hAcc: 5134, vAcc: 4414
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218633400, lon: 302699027, lat: 599398353, height: 24611, hMSL: 8682, hAcc: 5129, vAcc: 4421
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218634300, lon: 302699062, lat: 599398438, height: 24640, hMSL: 8710, hAcc: 5131, vAcc: 4430
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218635000, lon: 302699036, lat: 599398453, height: 24867, hMSL: 8937, hAcc: 5129, vAcc: 4435
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218635700, lon: 302698997, lat: 599398464, height: 24705, hMSL: 8776, hAcc: 5129, vAcc: 4441
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218636400, lon: 302698993, lat: 599398493, height: 24699, hMSL: 8769, hAcc: 5125, vAcc: 4447
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218638000, lon: 302698736, lat: 599398390, height: 24218, hMSL: 8289, hAcc: 5125, vAcc: 4459
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218638700, lon: 302698673, lat: 599398302, height: 24390, hMSL: 8461, hAcc: 5132, vAcc: 4461
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218639400, lon: 302698531, lat: 599398271, height: 24428, hMSL: 8498, hAcc: 5127, vAcc: 4463
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218640300, lon: 302698452, lat: 599398250, height: 24434, hMSL: 8505, hAcc: 5126, vAcc: 4466
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218641000, lon: 302698372, lat: 599398193, height: 24195, hMSL: 8266, hAcc: 5135, vAcc: 4468
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218641700, lon: 302698393, lat: 599398225, height: 24300, hMSL: 8370, hAcc: 5125, vAcc: 4469
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218642400, lon: 302698275, lat: 599398217, height: 24363, hMSL: 8434, hAcc: 4961, vAcc: 4469
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218643300, lon: 302698284, lat: 599398201, height: 24691, hMSL: 8761, hAcc: 4857, vAcc: 4472
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218644000, lon: 302698250, lat: 599398201, height: 24980, hMSL: 9051, hAcc: 4805, vAcc: 4476
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218644700, lon: 302698214, lat: 599398213, height: 24993, hMSL: 9063, hAcc: 4760, vAcc: 4479
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218645400, lon: 302698183, lat: 599398220, height: 25383, hMSL: 9454, hAcc: 4717, vAcc: 4480
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218646300, lon: 302698113, lat: 599398255, height: 25641, hMSL: 9712, hAcc: 4667, vAcc: 4483
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218647000, lon: 302698087, lat: 599398275, height: 25753, hMSL: 9824, hAcc: 4630, vAcc: 4484
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218647700, lon: 302698088, lat: 599398283, height: 25772, hMSL: 9842, hAcc: 4594, vAcc: 4485
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218648400, lon: 302698051, lat: 599398311, height: 26167, hMSL: 10237, hAcc: 4557, vAcc: 4485
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218649300, lon: 302698011, lat: 599398315, height: 26803, hMSL: 10874, hAcc: 4514, vAcc: 4484
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218650000, lon: 302698113, lat: 599398417, height: 27651, hMSL: 11721, hAcc: 4488, vAcc: 4483
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218650700, lon: 302698111, lat: 599398489, height: 28392, hMSL: 12463, hAcc: 4474, vAcc: 4485
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218651400, lon: 302698162, lat: 599398549, height: 29009, hMSL: 13079, hAcc: 4470, vAcc: 4486
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218652300, lon: 302698148, lat: 599398633, height: 30067, hMSL: 14138, hAcc: 4465, vAcc: 4490
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218653000, lon: 302698062, lat: 599398658, height: 30699, hMSL: 14770, hAcc: 4463, vAcc: 4496
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218653700, lon: 302698081, lat: 599398708, height: 31291, hMSL: 15362, hAcc: 4464, vAcc: 4501
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218654400, lon: 302698040, lat: 599398681, height: 31873, hMSL: 15943, hAcc: 4470, vAcc: 4506
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218655300, lon: 302697882, lat: 599398653, height: 32462, hMSL: 16532, hAcc: 4475, vAcc: 4512
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218656000, lon: 302697898, lat: 599398689, height: 32896, hMSL: 16966, hAcc: 4474, vAcc: 4517
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218656700, lon: 302697900, lat: 599398728, height: 33287, hMSL: 17358, hAcc: 4474, vAcc: 4522
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218657400, lon: 302697853, lat: 599398710, height: 33835, hMSL: 17905, hAcc: 4473, vAcc: 4527
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218658300, lon: 302697737, lat: 599398746, height: 34503, hMSL: 18573, hAcc: 4469, vAcc: 4534
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218659000, lon: 302697709, lat: 599398812, height: 35077, hMSL: 19147, hAcc: 4470, vAcc: 4539
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218659700, lon: 302697553, lat: 599398818, height: 35619, hMSL: 19689, hAcc: 4472, vAcc: 4544
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218660400, lon: 302697501, lat: 599398862, height: 36153, hMSL: 20223, hAcc: 4472, vAcc: 4550
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218661300, lon: 302697580, lat: 599398915, height: 37379, hMSL: 21449, hAcc: 4482, vAcc: 4558
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218662000, lon: 302697596, lat: 599398983, height: 38495, hMSL: 22566, hAcc: 4482, vAcc: 4563
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218662700, lon: 302697508, lat: 599399017, height: 39459, hMSL: 23530, hAcc: 4485, vAcc: 4567
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218663400, lon: 302697519, lat: 599399028, height: 40474, hMSL: 24544, hAcc: 4489, vAcc: 4569
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218664300, lon: 302697491, lat: 599399060, height: 42086, hMSL: 26156, hAcc: 4499, vAcc: 4570
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218665000, lon: 302697506, lat: 599399158, height: 43256, hMSL: 27326, hAcc: 4507, vAcc: 4572
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218665700, lon: 302697552, lat: 599399273, height: 44570, hMSL: 28640, hAcc: 4514, vAcc: 4574
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218666400, lon: 302697600, lat: 599399367, height: 45793, hMSL: 29863, hAcc: 4513, vAcc: 4575
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218667300, lon: 302697736, lat: 599399500, height: 47615, hMSL: 31686, hAcc: 4511, vAcc: 4577
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218668000, lon: 302697840, lat: 599399606, height: 49020, hMSL: 33091, hAcc: 4508, vAcc: 4576
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218668900, lon: 302697844, lat: 599399689, height: 50551, hMSL: 34621, hAcc: 4512, vAcc: 4577
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218669600, lon: 302697867, lat: 599399763, height: 51723, hMSL: 35793, hAcc: 4506, vAcc: 4580
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218670500, lon: 302697947, lat: 599399877, height: 53262, hMSL: 37332, hAcc: 4519, vAcc: 4582
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218671000, lon: 302697923, lat: 599399931, height: 54259, hMSL: 38330, hAcc: 4526, vAcc: 4581
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218671700, lon: 302698030, lat: 599399992, height: 55594, hMSL: 39664, hAcc: 4532, vAcc: 4579
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218672400, lon: 302698134, lat: 599400061, height: 56735, hMSL: 40806, hAcc: 4529, vAcc: 4578
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218673300, lon: 302698141, lat: 599400159, height: 58287, hMSL: 42358, hAcc: 4551, vAcc: 4584
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218674000, lon: 302698169, lat: 599400269, height: 59360, hMSL: 43431, hAcc: 4581, vAcc: 4591
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218674700, lon: 302698253, lat: 599400350, height: 60455, hMSL: 44526, hAcc: 4632, vAcc: 4603
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218675400, lon: 302698466, lat: 599400477, height: 61481, hMSL: 45552, hAcc: 4648, vAcc: 4611
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218676300, lon: 302698530, lat: 599400542, height: 62862, hMSL: 46933, hAcc: 4662, vAcc: 4619
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218677000, lon: 302698624, lat: 599400583, height: 64003, hMSL: 48074, hAcc: 4707, vAcc: 4627
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218677700, lon: 302698796, lat: 599400690, height: 65225, hMSL: 49296, hAcc: 4754, vAcc: 4636
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218678400, lon: 302698969, lat: 599400771, height: 65952, hMSL: 50023, hAcc: 4831, vAcc: 4661
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218679300, lon: 302698998, lat: 599400797, height: 66759, hMSL: 50830, hAcc: 4982, vAcc: 4699
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218680000, lon: 302699120, lat: 599400872, height: 67532, hMSL: 51603, hAcc: 5055, vAcc: 4725
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218680700, lon: 302699274, lat: 599400901, height: 68646, hMSL: 52717, hAcc: 5021, vAcc: 4735
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218681400, lon: 302699507, lat: 599401025, height: 70154, hMSL: 54225, hAcc: 4999, vAcc: 4730
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218682300, lon: 302699774, lat: 599401201, height: 71773, hMSL: 55843, hAcc: 4966, vAcc: 4721
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218683000, lon: 302699885, lat: 599401369, height: 72928, hMSL: 56998, hAcc: 4957, vAcc: 4716
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218683700, lon: 302699977, lat: 599401552, height: 74177, hMSL: 58248, hAcc: 4965, vAcc: 4714
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218684400, lon: 302700014, lat: 599401638, height: 75046, hMSL: 59117, hAcc: 4984, vAcc: 4720
+Receiving
+01 35
+Receiving
+01 04
+Receiving
+01 04
+Receiving
+01 07
+iTOW: 218685300, lon: 302700144, lat: 599401746, height: 76005, hMSL: 60076, hAcc: 5022, vAcc: 4737
+Receiving
+01 35
+Receiving
+01 35
+Receiving
+01 07
+iTOW: 218686000, lon: 302700232, lat: 599401820, height: 76881, hMSL: 60952, hAcc: 5067, vAcc: 4751
